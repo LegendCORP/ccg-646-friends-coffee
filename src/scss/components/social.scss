@@ -1,0 +1,156 @@
+$link-size: 44px;
+$link-size-mob: 40px;
+
+.social-links {
+  display: flex;
+  position: relative;
+
+  @include media("<desktop") {
+    padding-right: 50px;
+  }
+
+  &--header {
+    display: none;
+    padding-right: 0;
+
+    @include media(">=tablet") {
+      display: flex;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__drop-item {
+    width: 0;
+    display: flex;
+    @include animate(width);
+
+    @include media(">=desktop") {
+      width: 0;
+    }
+  }
+
+  &__drop-text {
+    text-align: center;
+    border: 1px solid white;
+    border-top-right-radius: ($link-size-mob - 2px)/2;
+    border-bottom-right-radius: ($link-size-mob - 2px)/2;
+    height: $link-size-mob - 2px;
+    line-height: $link-size-mob - 2px;
+    // font-family: $heading-font;
+    font-size: 14px;
+    flex-basis: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 10px;
+    white-space: nowrap;
+
+    @include animate(font-size padding border-width);
+
+    @include media(">=desktop") {
+      border-top-right-radius: ($link-size - 2px)/2;
+      border-bottom-right-radius: ($link-size - 2px)/2;
+      height: $link-size - 2px;
+      line-height: $link-size - 2px;
+    }
+  }
+
+  input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
+    color: #303232;
+    background-color: $white;
+    font-weight: 400;
+    flex-grow: 1;
+    outline: none;
+    padding: 0 12px;
+    @include animate(font-size border-width);
+
+    @include media("<tablet") {
+      width: calc(100% - 60px);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // color: $white;
+    width: $link-size-mob;
+    height: $link-size-mob;
+    margin: 0 5px;
+    border: 1px solid $white;
+    border-radius: $link-size / 2;
+    @include animate(width);
+
+    @include media(">=desktop") {
+      width: $link-size;
+      height: $link-size;
+    }
+
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+
+    &--fake {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      position: relative;
+      justify-content: space-between;
+      color: $white;
+      margin: 0 5px;
+      border: 1px solid $white;
+      overflow: hidden;
+
+      @include media(">=desktop") {
+        width: $link-size;
+        height: $link-size;
+      }
+
+      .opener {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+
+        @include media(">=tablet") {
+          width: $link-size;
+          flex-basis: $link-size;
+        }
+      }
+
+      &.active {
+        width: 200px;
+        border-color: $black;
+
+        @include media(">=tablet") {
+          width: 300px;
+        }
+
+        .opener {
+          background-color: $white;
+          width: 0;
+          //ff width fix
+          max-width: 0;
+          flex-basis: 0;
+        }
+
+        .social-links__drop-item {
+          width: 100%;
+        }
+      }
+
+      &:hover .opener {
+        color: $white;
+      }
+    }
+  }
+}

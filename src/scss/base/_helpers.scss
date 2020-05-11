@@ -1,198 +1,208 @@
 %listreset {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 %clearfix {
-    &:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
 
 %transition {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 %absoluteCentered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 %absoluteFullSize {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .clearfix {
-    @extend %clearfix;
+  @extend %clearfix;
 }
 
 .no-scroll {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .ellipsis {
-    white-space: nowrap; /* 1 */
-    text-overflow: ellipsis; /* 2 */
-    overflow: hidden;
+  white-space: nowrap; /* 1 */
+  text-overflow: ellipsis; /* 2 */
+  overflow: hidden;
 }
 
 @mixin placeholder {
-    &::-webkit-input-placeholder {
-        @content;
-    }
-    &::-moz-placeholder {
-        opacity: 1;
-        @content;
-    }
-    &:-moz-placeholder {
-        @content;
-    }
-    &:-ms-input-placeholder {
-        @content;
-    }
-    &.placeholder {
-        @content;
-    }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &.placeholder {
+    @content;
+  }
 }
 
 .flex {
-    display: flex;
+  display: flex;
 
-    &--wrap {
-        flex-wrap: wrap;
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &-d {
+    &--col {
+      flex-direction: column;
+    }
+  }
+
+  &-jc {
+    &--end {
+      justify-content: flex-end;
     }
 
-    &-d {
-        &--col {
-            flex-direction: column;
-        }
+    &--sb {
+      justify-content: space-between;
     }
 
-    &-jc {
-        &--end {
-            justify-content: flex-end;
-        }
+    &--center {
+      justify-content: center;
+    }
+  }
 
-        &--sb {
-            justify-content: space-between;
-        }
-
-        &--center {
-            justify-content: center;
-        }
+  &-ai {
+    &--right {
+      align-items: flex-end;
     }
 
-    &-ai {
-        &--right {
-            align-items: flex-end;
-        }
-
-        &--center {
-            align-items: center;
-        }
+    &--center {
+      align-items: center;
     }
+  }
 }
 
 .grid {
-    display: flex;
+  display: flex;
 
-    &--wrap {
-        flex-wrap: wrap;
-    }
+  &--wrap {
+    flex-wrap: wrap;
+  }
 }
 
 .row {
-    display: flex;
+  display: flex;
 
-    &--gutter {
-        &-md {
-            margin-right: -$container-spacing;
-            margin-left: -$container-spacing;
+  &--gutter {
+    &-md {
+      margin-right: -$container-spacing;
+      margin-left: -$container-spacing;
 
-            .col {
-                padding-right: $container-spacing;
-                padding-left: $container-spacing;
-            }
-        }
+      .col {
+        padding-right: $container-spacing;
+        padding-left: $container-spacing;
+      }
     }
+  }
 
-    &--wrap {
-        flex-wrap: wrap;
-    }
+  &--wrap {
+    flex-wrap: wrap;
+  }
 }
 
 .col {
-    flex-grow: 1;
-    width: 100%;
+  flex-grow: 1;
+  width: 100%;
 
-    &--lg {
-        &-4 {
-            @include media('>=desktop') {
-                max-width: 33.333333%;
-                width: 33.333333%;
-            }
-        }
+  &--lg {
+    &-4 {
+      @include media(">=desktop") {
+        max-width: 33.333333%;
+        width: 33.333333%;
+      }
+    }
+  }
+
+  &--sm {
+    &-4 {
+      max-width: 33.333333%;
+      flex-basis: 33.333333%;
     }
 
-    &--sm {
-        &-4 {
-            max-width: 33.333333%;
-            flex-basis: 33.333333%;
-        }
-
-        &-12 {
-            max-width: 100%;
-            flex-basis: 100%;
-        }
+    &-12 {
+      max-width: 100%;
+      flex-basis: 100%;
     }
+  }
 
-    &--md {
-        @include media('>=phone') {
-            &-4 {
-                max-width: 33.333333%;
-                flex-basis: 33.333333%;
-            }
-        }
+  &--md {
+    @include media(">=phone") {
+      &-4 {
+        max-width: 33.333333%;
+        flex-basis: 33.333333%;
+      }
     }
+  }
 }
 
 .v-hidden {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    width: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .spacing {
-    &-x {
-        &-bottom {
-            &--md {
-                margin-bottom: 8px;
+  &-x {
+    &-bottom {
+      &--md {
+        margin-bottom: 8px;
 
-                @include media('>=phone') {
-                    margin-bottom: 24px;
-                }
-            }
-
-            &--lg {
-                margin-bottom: 24px;
-
-                @include media('>=phone') {
-                    margin-bottom: 40px;
-                }
-            }
+        @include media(">=phone") {
+          margin-bottom: 24px;
         }
+      }
+
+      &--lg {
+        margin-bottom: 24px;
+
+        @include media(">=phone") {
+          margin-bottom: 40px;
+        }
+      }
     }
+  }
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-white {
+    color: $white;
+  }
 }

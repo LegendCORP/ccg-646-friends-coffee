@@ -1,26 +1,28 @@
 // Colors
 
-$light-gray: #f5f5f7;
+// $light-gray: #f5f5f7;
 $gray: #cbced5;
-$darker-gray: #4e4e4e;
-$dark-gray: #818181;
+// $darker-gray: #4e4e4e;
+// $dark-gray: #818181;
 $black: #333;
 $white: #fff;
-$light-blue: #39f;
+// $light-blue: #39f;
 
 $primary: #0a4f94;
-$accent: #f2a533;
+// $accent: #f2a533;
 
-$alert: #f2684a;
+// $alert: #f2684a;
+
+$bg-blue: #0a1d39;
 
 //Fonts
-$base-font: 'Literata', 'Helvetica Neue', 'Helvetica', sans-serif;
-$secondary-font: 'Lato', 'Times', 'Baskerville', 'Georgia', serif;
-$sorce-code-font: 'Source Code Pro', 'Times', 'Baskerville', 'Georgia', serif;
+$base-font: "Poppins", "Helvetica Neue", "Helvetica", sans-serif;
+$secondary-font: "Kaushan", "Times", "Baskerville", "Georgia", serif;
+$sorce-code-font: "Source Code Pro", "Times", "Baskerville", "Georgia", serif;
 
 // Body
 $base-text-color: $black !default;
-$base-background-color: $white !default;
+$base-background-color: $bg-blue !default;
 $font-size-base: 16px !default;
 $line-height-base: 1.7 !default;
 $base-font-family: $base-font !default;
@@ -30,8 +32,8 @@ $vertical-rhythm: ($line-height-base * 1em);
 $base-min-width: 320px;
 
 //Content holders
-$container-width: 1150px;
-$container-spacing: 16px;
+$container-width: 1190px;
+$container-spacing: 20px;
 
 // Liks
 $base-link-color: $primary;
