@@ -1,0 +1,87 @@
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h {
+    font-family: $headings-font-family;
+    font-weight: bold;
+    margin: 0 0 0.61em;
+    color: $headings-color;
+    line-height: 1.4;
+}
+
+h1,
+.h1 {
+    font-size: $h1-font-size;
+    font-weight: 400;
+
+    @include media('>=tablet') {
+        font-size: rem(38px);
+    }
+}
+
+h2,
+.h2 {
+    font-size: rem(24px);
+    font-family: $secondary-font;
+
+    @include media('>=tablet') {
+        font-size: $h2-font-size;
+    }
+}
+
+h3,
+.h3 {
+    font-size: $h3-font-size;
+
+    @include media('>=tablet') {
+        font-size: rem(24px);
+    }
+}
+
+h4,
+.h4 {
+    font-size: $h4-font-size;
+    font-family: $secondary-font;
+}
+
+h5,
+.h5 {
+    font-size: $h5-font-size;
+}
+
+h6,
+.h6 {
+    font-size: $h6-font-size;
+}
+
+p {
+    margin: 0 0 20px;
+    font-size: rem(16px);
+    line-height: 1.7;
+
+    @include media('>=phone') {
+        margin: 0 0 24px;
+        font-size: rem(18px);
+    }
+}
+
+a {
+    color: $base-link-color;
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    font-family: inherit;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $base-link-color;
+    }
+}
+
+.main-title a {
+    color: $black;
+}

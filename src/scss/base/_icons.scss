@@ -1,0 +1,25 @@
+.svg-icon {
+    fill: currentColor;
+
+    &--primary {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    &--user {
+        color: $black;
+        width: 12px;
+        height: 12px;
+    }
+
+    &--time {
+        width: 16px;
+        height: 16px;
+    }
+
+    &--comment {
+        width: 20px;
+        height: 17px;
+    }
+}
