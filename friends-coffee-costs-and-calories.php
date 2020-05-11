@@ -7,10 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>How much coffee did the Friends characters really drink?</title>
         <meta name="description" content="We worked out exactly how much money each of the Friends characters would have spent on coffee over all 10 seasons and how many calories they consumed." />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,600&display=swap"
-            rel="stylesheet"
-        />
        <link media="all" rel="stylesheet" href="dist/bundle.css">
     </head>
 
@@ -38,6 +34,7 @@
         <section class="container">
             <h1 class="text-center text-white">How much each Friends characters would spend on their coffees today and how many calories they would have consumed</h1>
         </section>
+        test
         </div>
         <script src="dist/js/pages/friends-coffee-costs-and-calories.js"></script> 
     </body>

@@ -1,13 +1,17 @@
 $pageName: "friends-coffee-costs-and-calories";
+$devPrefix: "/ccg-646-friends-coffee";
 
 @font-face {
   font-family: "icomoon";
-  src: url("/fonts/marketing/#{$pageName}/icomoon.eot?6wnap");
-  src: url("/fonts/marketing/#{$pageName}/icomoon.eot?6wnap#iefix")
+  src: url("#{$devPrefix}/fonts/marketing/#{$pageName}/icomoon.eot?6wnap");
+  src: url("#{$devPrefix}/fonts/marketing/#{$pageName}/icomoon.eot?6wnap#iefix")
       format("embedded-opentype"),
-    url("/fonts/marketing/#{$pageName}/icomoon.ttf?6wnap") format("truetype"),
-    url("/fonts/marketing/#{$pageName}/icomoon.woff?6wnap") format("woff"),
-    url("/fonts/marketing/#{$pageName}/icomoon.svg?6wnap#icomoon") format("svg");
+    url("#{$devPrefix}/fonts/marketing/#{$pageName}/icomoon.ttf?6wnap")
+      format("truetype"),
+    url("#{$devPrefix}/fonts/marketing/#{$pageName}/icomoon.woff?6wnap")
+      format("woff"),
+    url("#{$devPrefix}/fonts/marketing/#{$pageName}/icomoon.svg?6wnap#icomoon")
+      format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

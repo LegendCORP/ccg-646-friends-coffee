@@ -17,7 +17,7 @@ $bg-blue: #0a1d39;
 
 //Fonts
 $base-font: "Poppins", "Helvetica Neue", "Helvetica", sans-serif;
-$secondary-font: "Kaushan", "Times", "Baskerville", "Georgia", serif;
+$secondary-font: "Kaushan Script", "Times", "Baskerville", "Georgia", serif;
 $sorce-code-font: "Source Code Pro", "Times", "Baskerville", "Georgia", serif;
 
 // Body
@@ -58,7 +58,7 @@ $h4-font-size: rem(20px) !default;
 $h5-font-size: rem(20px) !default;
 $h6-font-size: rem(16px) !default;
 
-$headings-font-family: inherit !default;
+$headings-font-family: $secondary-font !default;
 $headings-color: inherit !default;
 
 $animation-speed: 0.3s;
