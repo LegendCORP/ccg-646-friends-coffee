@@ -15,6 +15,13 @@ $primary: #0a4f94;
 
 $bg-blue: #0a1d39;
 
+$red: #f44a4f;
+$blue: #25c3f2;
+$yellow: #ffc544;
+
+$color-text-violet: #373258;
+$color-text-gray: #9693a8;
+
 //Fonts
 $base-font: "Poppins", "Helvetica Neue", "Helvetica", sans-serif;
 $secondary-font: "Kaushan Script", "Times", "Baskerville", "Georgia", serif;
@@ -53,7 +60,7 @@ $placeholder-color: $black !default;
 // Headers
 $h1-font-size: rem(26px) !default;
 $h2-font-size: rem(28px) !default;
-$h3-font-size: rem(16px) !default;
+$h3-font-size: rem(22px) !default;
 $h4-font-size: rem(20px) !default;
 $h5-font-size: rem(20px) !default;
 $h6-font-size: rem(16px) !default;

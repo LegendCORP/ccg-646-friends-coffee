@@ -29,9 +29,10 @@ $media-expressions: (
 @import "base/reset";
 @import "base/forms";
 @import "base/typography";
-@import "base/icons";
+@import "base/font-awesome";
 
 @import "layout/common";
 @import "layout/header";
 
 @import "components/social";
+@import "components/common";

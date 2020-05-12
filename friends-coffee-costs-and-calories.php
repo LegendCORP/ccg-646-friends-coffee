@@ -11,11 +11,14 @@
     </head>
 
     <body>
+        <?php include "sprite.php"; ?>
+        <?php include "content.php"; ?>
+
         <div id="wrapper">
         <header class="header">
             <div class="container header__container">
                 <a href="/" class="header__logo-link">
-                    <img class="header__logo-img" src="dist/images/logo.png" alt="CardsChat.com">
+                    <img class="header__logo-img" src="images/logo.png" alt="CardsChat.com">
                 </a>
                 <ul class="social-links social-links--header">
                     <li class="social-links__item">
@@ -34,7 +37,64 @@
         <section class="container">
             <h1 class="text-center text-white">How much each Friends characters would spend on their coffees today and how many calories they would have consumed</h1>
         </section>
-        test
+        <div class="container">
+            <section class="section section--white">
+                <div class="img-wrap img-wrap--lg-radius">
+                    <img src="images/central-perk.png" alt="central perk">
+                </div>
+                <h3 class="text-center">Favorite drink of each Friends character</h3>
+                <div class="js-readmore-container-top">
+                    <div class="read-more__trigger js-readmore-trigger-top">
+                        <i class="fa-angle-down"></i>
+                    </div>
+                    <div class="friend-drinks">
+
+                        <?php foreach($friends as $friendDrink): ?>
+
+                        <div class="friend-drink">
+                            <div class="avatar avatar--lg">
+                                <img src="<?php echo "images/avatars/" . $friendDrink['name'] . ".png"; ?>" alt="monika">
+                            </div>
+                            <div class="friend-drink__info">
+                                <div class="friend-drink__name">
+
+                                    <span><?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?></span>
+                                    
+                                    <svg class="svg-icon">
+                                        <use xlink:href="#icon-<?php echo $friendDrink['type']; ?>"></use>
+                                    </svg>
+                                </div>
+                                <div class="friend-drink__drink">
+
+                                    <span><?php echo $friendDrink['name']; ?></span>
+                                    
+                                    <svg class="svg-icon">
+                                        <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
+                                    </svg>
+                                </div>
+                                <div class="friend-drink__values">
+                                    <div class="sausage sausage--sm sausage--red sausage--dot">
+                                        <i class="dot dot--sm"></i>
+                                        
+                                        <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['price'] ;?>
+                                    
+                                    </div>
+                                    <div class="sausage sausage--sm sausage--blue sausage--dot">
+                                        <i class="dot dot--sm"></i>
+
+                                        <?php echo 'Cal ' . $drinks[$friendDrink['drinkId'] - 1]['calories'] ;?>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <?php endforeach; ?>
+
+                    </div>
+                </div>
+            </section>
+        </div>
         </div>
         <script src="dist/js/pages/friends-coffee-costs-and-calories.js"></script> 
     </body>
