@@ -45,52 +45,55 @@
                 <h3 class="text-center">Favorite drink of each Friends character</h3>
                 <div class="js-readmore-container-top">
                     <div class="read-more__trigger js-readmore-trigger-top">
+                        <div class="js-readmore-text-top"></div>
                         <i class="fa-angle-down"></i>
                     </div>
-                    <div class="friend-drinks">
+                    <div class="js-readmore-top">
+                        <div class="friend-drinks">
 
                         <?php foreach($friends as $friendDrink): ?>
-
-                        <div class="friend-drink">
-                            <div class="avatar avatar--lg">
-                                <img src="<?php echo "images/avatars/" . $friendDrink['name'] . ".png"; ?>" alt="monika">
-                            </div>
-                            <div class="friend-drink__info">
-                                <div class="friend-drink__name">
-
-                                    <span><?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?></span>
-                                    
-                                    <svg class="svg-icon">
-                                        <use xlink:href="#icon-<?php echo $friendDrink['type']; ?>"></use>
-                                    </svg>
+                        
+                            <div class="friend-drink">
+                                <div class="avatar avatar--lg">
+                                    <img src="<?php echo "images/avatars/" . $friendDrink['name'] . ".png"; ?>" alt="monika">
                                 </div>
-                                <div class="friend-drink__drink">
+                                <div class="friend-drink__info">
+                                    <div class="friend-drink__name">
+                            
+                                        <span><?php echo $friendDrink['name']; ?></span>
 
-                                    <span><?php echo $friendDrink['name']; ?></span>
-                                    
-                                    <svg class="svg-icon">
-                                        <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
-                                    </svg>
-                                </div>
-                                <div class="friend-drink__values">
-                                    <div class="sausage sausage--sm sausage--red sausage--dot">
-                                        <i class="dot dot--sm"></i>
-                                        
-                                        <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['price'] ;?>
-                                    
+                                        <svg class="svg-icon">
+                                            <use xlink:href="#icon-<?php echo $friendDrink['type']; ?>"></use>
+                                        </svg>
                                     </div>
-                                    <div class="sausage sausage--sm sausage--blue sausage--dot">
-                                        <i class="dot dot--sm"></i>
+                                    <div class="friend-drink__drink">
+                            
+                                        <span><?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?></span>
 
-                                        <?php echo 'Cal ' . $drinks[$friendDrink['drinkId'] - 1]['calories'] ;?>
-                                    
+                                        <svg class="svg-icon">
+                                            <use x='0' y='0' xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="friend-drink__values">
+                                        <div class="sausage sausage--sm sausage--red sausage--dot">
+                                            <i class="dot dot--sm"></i>
+
+                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['price'] ;?>
+
+                                        </div>
+                                        <div class="sausage sausage--sm sausage--blue sausage--dot">
+                                            <i class="dot dot--sm"></i>
+                            
+                                            <?php echo 'Cal ' . $drinks[$friendDrink['drinkId'] - 1]['calories'] ;?>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
+                        
                         <?php endforeach; ?>
-
+                        
+                        </div>
                     </div>
                 </div>
             </section>
