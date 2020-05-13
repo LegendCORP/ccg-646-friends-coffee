@@ -75,13 +75,13 @@
                                         </svg>
                                     </div>
                                     <div class="friend-drink__values">
-                                        <div class="sausage sausage--sm sausage--red sausage--dot">
+                                        <div class="sausage sausage--red sausage--dot-sm">
                                             <i class="dot dot--sm"></i>
 
                                             <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['price'] ;?>
 
                                         </div>
-                                        <div class="sausage sausage--sm sausage--blue sausage--dot">
+                                        <div class="sausage sausage--blue sausage--dot-sm">
                                             <i class="dot dot--sm"></i>
                             
                                             <?php echo 'Cal ' . $drinks[$friendDrink['drinkId'] - 1]['calories'] ;?>
@@ -96,6 +96,98 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="section section--white">
+                <h3 class="text-center heading-decorated"><span>Total. All seasons</span></h3>
+                <div class="f-table">
+                            <!-- head -->
+                    <div class="f-table__row f-table__row--head">
+                        <div class="f-table__d">Title</div>
+
+                        <?php foreach($friends as $friend): ?>
+                            <div class="f-table__d">
+                                <div class="avatar avatar--sm">
+                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="monika">
+                                </div>
+                                <?php echo $friend['name'] ;?>
+                            </div>
+                        <?php endforeach; ?>
+
+                        <div class="f-table__d">Total per seasons</div>
+                    </div>
+                            <!-- row1   -->
+                    <div class="f-table__row sausage sausage--red sausage--md">
+                        <div class="f-table__d"><div class="sausage  sausage--sm">Total drinks</div></div>
+                        <?php
+                            $total = 0; 
+                            foreach($friends as $friend): 
+                        ?>
+                        <div class="f-table__d">
+                            <div class="sausage sausage--sm">
+                            <?php 
+                                $total += array_sum($friend['seasonsDrinks']);
+                                echo array_sum($friend['seasonsDrinks']) ;
+                            ?>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                        <div class="f-table__d">
+                            <div class="sausage sausage--sm">
+                                <?php echo $total; ?>
+                            </div>
+                        </div>
+                    </div>
+                            <!-- row2   -->
+                    <div class="f-table__row sausage sausage--blue sausage--md">
+                        <div class="f-table__d"><div class="sausage  sausage--sm">Total dollars</div></div>
+                        <?php
+                            $total = 0; 
+                            foreach($friends as $friend): 
+                        ?>
+                        <div class="f-table__d">
+                            <div class="sausage sausage--sm">
+                            <?php 
+                                $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['price'];
+                                echo '$ ' . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['price'];
+                            ?>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                        <div class="f-table__d">
+                            <div class="sausage sausage--sm">
+                                <?php echo '$ ' . $total; ?>
+                            </div>
+                        </div>
+                    </div>
+                            <!-- row3   -->
+                    <div class="f-table__row sausage sausage--yellow sausage--md">
+                        <div class="f-table__d"><div class="sausage  sausage--sm">Total calories</div></div>
+                        <?php
+                            $total = 0; 
+                            foreach($friends as $friend): 
+                        ?>
+                        <div class="f-table__d">
+                            <div class="sausage sausage--sm">
+                            <?php 
+                                $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['calories'];
+                                echo array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['calories'] ;
+                            ?>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                        <div class="f-table__d">
+                            <div class="sausage sausage--sm">
+                                <?php echo $total; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 class="text-center heading-decorated"><span>Information per each character</span></h3>
+
+            
             </section>
         </div>
         </div>

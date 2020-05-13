@@ -10,6 +10,7 @@
     background-color: $white;
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 30px;
 
     @include media(">=tablet") {
       border-radius: 15px;
@@ -28,6 +29,52 @@
     @include media(">=tablet") {
       border-radius: 15px;
       margin-bottom: 40px;
+    }
+  }
+}
+
+.heading {
+  &-decorated {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      margin: 0 10px;
+
+      @include media(">=tablet") {
+        margin: 0 10px;
+      }
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      height: 3px;
+      background-color: $light-gray;
+      width: 50px;
+
+      @include media(">=phone") {
+        height: 5px;
+        width: 33%;
+      }
+    }
+
+    &:after {
+      margin-right: -10px;
+
+      @include media(">=phone") {
+        margin-right: 0;
+      }
+    }
+
+    &::before {
+      margin-left: -10px;
+
+      @include media(">=phone") {
+        margin-left: 0;
+      }
     }
   }
 }
