@@ -1,5 +1,6 @@
 $breakpoints: (
   "xs-phone": 320px,
+  "mobile": 480px,
   "phone": 600px,
   "tablet": 768px,
   "desktop": 1024px,
@@ -36,3 +37,4 @@ $media-expressions: (
 
 @import "components/social";
 @import "components/common";
+@import "components/freind-drinks-block";

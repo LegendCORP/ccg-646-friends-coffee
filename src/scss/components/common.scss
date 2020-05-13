@@ -1,13 +1,39 @@
 .read-more {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+
+  @include media(">=tablet") {
+    height: auto !important;
+    overflow: visible;
+  }
+
   &__trigger {
     text-align: center;
+    padding-bottom: 10px;
 
     @include media(">=tablet") {
       display: none;
     }
 
+    &.open {
+      i {
+        transform: rotate(180deg);
+      }
+    }
+
     i {
       font-size: 25px;
+      transition: transform 0.3s ease;
+      height: 8px;
+      display: block;
+      line-height: 8px;
+
+      &::before {
+        height: 8px;
+        display: block;
+        line-height: 8px;
+      }
     }
   }
 }
@@ -19,6 +45,7 @@
 
   img {
     position: absolute;
+    width: 100%;
   }
 
   &--lg {
@@ -26,54 +53,12 @@
     height: 60px;
     min-width: 60px;
     box-shadow: 0px 5px 10px rgba(26, 30, 56, 0.2);
-  }
-}
 
-.friend-drink {
-  padding: 6px;
-  height: 71px;
-  box-shadow: 0px 4px 12px #e8e9eb;
-  border-radius: 1000px;
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 10px;
-
-  &__info {
-    margin-left: 10px;
-    font-size: 12px;
-    line-height: 1;
-    color: $color-text-gray;
-
-    .svg-icon {
-      width: 16px;
-      height: 16px;
-      margin-left: 9px;
+    @include media(">=tablet") {
+      width: 103px;
+      height: 103px;
+      min-width: 103px;
     }
-  }
-
-  &__name {
-    display: flex;
-    align-items: flex-end;
-
-    .svg-icon {
-      width: 13px;
-      height: 13px;
-    }
-  }
-
-  &__drink {
-    font-size: 12px;
-    line-height: 1;
-    font-weight: bold;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 4px;
-    color: $color-text-violet;
-  }
-
-  &__values {
-    display: flex;
-    align-items: center;
   }
 }
 
@@ -103,6 +88,10 @@
     width: 72px;
     padding-left: 20px;
     margin-right: 14px;
+
+    @include media(">=tablet") {
+      width: 87px;
+    }
   }
 }
 

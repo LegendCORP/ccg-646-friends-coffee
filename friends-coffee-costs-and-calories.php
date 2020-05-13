@@ -48,7 +48,7 @@
                         <div class="js-readmore-text-top"></div>
                         <i class="fa-angle-down"></i>
                     </div>
-                    <div class="js-readmore-top">
+                    <div class="read-more friend-drinks-read-more js-readmore-top">
                         <div class="friend-drinks">
 
                         <?php foreach($friends as $friendDrink): ?>
