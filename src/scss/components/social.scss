@@ -2,24 +2,31 @@ $link-size: 44px;
 $link-size-mob: 40px;
 
 .social-links {
-  display: flex;
+  display: none;
   position: relative;
+  
+  @include media(">=tablet") {
+    display: flex;
+  }
 
   @include media("<desktop") {
     padding-right: 50px;
   }
 
   &--header {
-    display: none;
+    display: flex;
     padding-right: 0;
-
-    @include media(">=tablet") {
-      display: flex;
-    }
+    position: relative;
+    top: 0;
+    left: 0;
 
     a {
       text-decoration: none;
     }
+  }
+  
+  &--large {
+    justify-content: center;
   }
 
   &__drop-item {
@@ -59,12 +66,20 @@ $link-size-mob: 40px;
   }
 
   input[type="text"] {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
     background-color: transparent;
     border: none;
     border-left: 1px solid $white;
     border-right: 1px solid $white;
     color: #303232;
     background-color: $white;
+    font-family: $base-font;
     font-weight: 400;
     flex-grow: 1;
     outline: none;
@@ -76,26 +91,78 @@ $link-size-mob: 40px;
     }
   }
 
-  &__item {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    // color: $white;
+    color: $white;
     width: $link-size-mob;
     height: $link-size-mob;
     margin: 0 5px;
     border: 1px solid $white;
     border-radius: $link-size / 2;
-    @include animate(width);
+    background-color: $white;
+    position: relative;
+    cursor: pointer;
+    @include animate(width background-color color);
 
     @include media(">=desktop") {
       width: $link-size;
       height: $link-size;
     }
+    
+    .social-links--header &{
+      width: 53px;
+      height: 53px;
+      border-radius: 0;
+      border: 0;
+      padding: 12px 10px 0 0;
+      background-color: transparent;
+    }
+    
+    .social-links--large &{
+      width: 70px;
+      height: 70px;
+      border-radius: 0;
+      border: 0;
+      padding: 18px 15px 0 0;
+      background-color: transparent;
+      font-size: 23px;
+      
+      @include media('>=tablet') {
+        width: 110px;
+        height: 110px;
+        font-size: 30px;
+        padding: 22px 20px 0 0;
+      }
+    }
+    
+    .cup {
+      opacity: 0.2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 53px;
+      height: 53px;
+      @include animate(opacity);
+      
+      .social-links--large &{
+        width: 70px;
+        height: 70px;
+        
+        @include media('>=tablet') {
+          width: 110px;
+          height: 110px;
+        }
+      }
+    }
 
     &:hover {
       color: $white;
       border-color: $white;
+      .cup {
+        opacity: 0.4;
+      }
     }
 
     &--fake {
