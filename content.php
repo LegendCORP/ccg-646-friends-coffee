@@ -19,7 +19,7 @@ $drinks = [
         'name' => 'Decaf Cappuccino',
         'calories' => 165, 
         'icon' => 'cappuccino', 
-        'price' => 3.95, 
+        'dollars' => 3.95, 
         'ingredients' => ['espresso', 'milk', 'sugar'],
     ],
     [
@@ -27,7 +27,7 @@ $drinks = [
         'name' => 'Ice tea',
         'calories' => 90, 
         'icon' => 'tea', 
-        'price' => 2.25, 
+        'dollars' => 2.25, 
         'ingredients' => ['coffee', 'boiled water', 'sugar'],
     ],
     [
@@ -35,7 +35,7 @@ $drinks = [
         'name' => 'Coffee black',
         'calories' => 16, 
         'icon' => 'coffee', 
-        'price' => 2.50, 
+        'dollars' => 2.50, 
         'ingredients' => ['tea', 'cold water', 'ice '],
     ],
     [
@@ -43,7 +43,7 @@ $drinks = [
         'name' => 'Latte',
         'calories' => 240, 
         'icon' => 'latte', 
-        'price' => 3.95, 
+        'dollars' => 3.95, 
         'ingredients' => ['coffee', 'frothy milk', 'sugar'],
     ],
 ];

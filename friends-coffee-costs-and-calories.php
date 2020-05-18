@@ -162,78 +162,46 @@
 
                         <div class="f-table__td">Total per seasons</div>
                     </div>
-                            <!-- row1   -->
-                    <div class="f-table__row sausage sausage--red sausage--md">
-                        <div class="f-table__td"><div class="sausage  sausage--sm">Total drinks</div></div>
-                        <?php
-                            $total = 0; 
-                            foreach($friends as $friend): 
-                        ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                            <?php 
-                                $total += array_sum($friend['seasonsDrinks']);
-                                echo array_sum($friend['seasonsDrinks']) ;
+                            <!-- rows -->
+                    <?php foreach($totalTypes as $type): ?>
+                        
+                        <div class="f-table__row sausage sausage--<?php echo $type['color']; ?> sausage--md">
+                            <div class="f-table__td"><div class="sausage  sausage--sm">Total <?php echo $type['type']; ?></div></div>
+                            <?php
+                                $total = 0; 
+                                foreach($friends as $friend): 
                             ?>
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm">
+                                <?php
+                                    $prefix = '';
+                                    if($type['type'] == 'dollars') $prefix = '$ ';
+                                    if($type['type'] == 'drinks') {
+                                        $total += array_sum($friend['seasonsDrinks']);
+                                        echo array_sum($friend['seasonsDrinks']) ;
+                                    }else{
+                                        $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                        echo $prefix . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                    }
+                                ?>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm">
+                                    <?php echo $total; ?>
+                                </div>
                             </div>
                         </div>
-                        <?php endforeach; ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                                <?php echo $total; ?>
-                            </div>
-                        </div>
-                    </div>
-                            <!-- row2   -->
-                    <div class="f-table__row sausage sausage--blue sausage--md">
-                        <div class="f-table__td"><div class="sausage  sausage--sm">Total dollars</div></div>
-                        <?php
-                            $total = 0; 
-                            foreach($friends as $friend): 
-                        ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                            <?php 
-                                $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['price'];
-                                echo '$ ' . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['price'];
-                            ?>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                                <?php echo '$ ' . $total; ?>
-                            </div>
-                        </div>
-                    </div>
-                            <!-- row3   -->
-                    <div class="f-table__row sausage sausage--yellow sausage--md">
-                        <div class="f-table__td"><div class="sausage  sausage--sm">Total calories</div></div>
-                        <?php
-                            $total = 0; 
-                            foreach($friends as $friend): 
-                        ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                            <?php 
-                                $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['calories'];
-                                echo array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['calories'] ;
-                            ?>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                                <?php echo $total; ?>
-                            </div>
-                        </div>
-                    </div>
+
+                    <?php endforeach; ?>
+
                 </div>
 
                                 <!-- total seasons mobile -->
                 <div class="total-seasons total-seasons--mobile">
                     <?php foreach($totalTypes as $type): ?>
-                        <div class="sausage sausage--dot-md <?php echo 'sausage--' . $type['color'] ?>">
+                        <div class="sausage sausage--md sausage--dot-md <?php echo 'sausage--' . $type['color'] ?>">
                             <i class="dot dot--md"></i>
 
                             Total <?php echo $type['type'] ?>
