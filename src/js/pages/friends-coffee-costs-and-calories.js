@@ -1,8 +1,6 @@
 console.log("friends");
 
 import { ReadMoreToggler } from "../components/read-more";
-import { ReadMoreToggler } from "../components/open-close";
-import { ReadMoreToggler } from "../components/copy-share-text";
 
 new ReadMoreToggler({
   container: ".js-readmore-container-top",
@@ -12,8 +10,11 @@ new ReadMoreToggler({
   triggerTextHolder: ".js-readmore-text-top",
 });
 
-new OpenClose('.open-close');
+new OpenClose(".open-close");
 
-const readMoreContainers = Array.from(document.querySelectorAll('.js-read-more-container'));
-readMoreContainers.map((container) => new ReadMoreToggler(container, '.js-read-more-trigger'));
-
+const readMoreContainers = Array.from(
+  document.querySelectorAll(".js-read-more-container")
+);
+readMoreContainers.map(
+  (container) => new ReadMoreToggler(container, ".js-read-more-trigger")
+);

@@ -4,7 +4,7 @@ $link-size-mob: 40px;
 .social-links {
   display: none;
   position: relative;
-  
+
   @include media(">=tablet") {
     display: flex;
   }
@@ -24,7 +24,7 @@ $link-size-mob: 40px;
       text-decoration: none;
     }
   }
-  
+
   &--large {
     justify-content: center;
   }
@@ -110,8 +110,8 @@ $link-size-mob: 40px;
       width: $link-size;
       height: $link-size;
     }
-    
-    .social-links--header &{
+
+    .social-links--header & {
       width: 53px;
       height: 53px;
       border-radius: 0;
@@ -119,8 +119,8 @@ $link-size-mob: 40px;
       padding: 12px 10px 0 0;
       background-color: transparent;
     }
-    
-    .social-links--large &{
+
+    .social-links--large & {
       width: 70px;
       height: 70px;
       border-radius: 0;
@@ -128,15 +128,15 @@ $link-size-mob: 40px;
       padding: 18px 15px 0 0;
       background-color: transparent;
       font-size: 23px;
-      
-      @include media('>=tablet') {
+
+      @include media(">=tablet") {
         width: 110px;
         height: 110px;
         font-size: 30px;
         padding: 22px 20px 0 0;
       }
     }
-    
+
     .cup {
       opacity: 0.2;
       position: absolute;
@@ -144,13 +144,14 @@ $link-size-mob: 40px;
       left: 0;
       width: 53px;
       height: 53px;
+      color: $white;
       @include animate(opacity);
-      
-      .social-links--large &{
+
+      .social-links--large & {
         width: 70px;
         height: 70px;
-        
-        @include media('>=tablet') {
+
+        @include media(">=tablet") {
           width: 110px;
           height: 110px;
         }
