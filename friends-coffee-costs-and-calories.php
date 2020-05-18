@@ -166,7 +166,12 @@
                     <?php foreach($totalTypes as $type): ?>
                         
                         <div class="f-table__row sausage sausage--<?php echo $type['color']; ?> sausage--md">
-                            <div class="f-table__td"><div class="sausage  sausage--sm">Total <?php echo $type['type']; ?></div></div>
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm sausage--flex">
+                                    <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
+                                    Total <?php echo $type['type']; ?>
+                                </div>
+                            </div>
                             <?php
                                 $total = 0; 
                                 foreach($friends as $friend): 
