@@ -88,10 +88,36 @@
                                     <div class="friend-drink__drink">
                             
                                         <span><?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?></span>
-
-                                        <svg class="svg-icon">
-                                            <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
-                                        </svg>
+                                        <div class="tooltip">
+                                            <div class="tooltip-trigger">
+                                                <svg class="svg-icon">
+                                                    <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="tooltip__body">
+                                                <div class="tooltip__title">
+                                                    <svg class="svg-icon icon-cup">
+                                                        <use xlink:href="#icon-cup"></use>
+                                                    </svg>
+                                                    Ingredients of <?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?>
+                                                </div>
+                                                <div class="tooltip__content">
+                                                    <?php 
+                                                    $counter = 0;
+                                                    foreach ($drinks[$friendDrink['drinkId'] - 1]['ingredients'] as $ingredient): 
+                                                    ?>
+                                                        <div class="sausage sausage--flex sausage--dot-sm">
+                                                            <i class="dot dot--sm dot--<?php echo $counter%2 ? 'blue' : 'red'; ?>"></i>
+                                                            <?php echo $ingredient; ?>
+                                                        </div>
+                                                    <?php 
+                                                    $counter++;
+                                                    endforeach; 
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                     <div class="friend-drink__values">
                                         <div class="sausage sausage--red sausage--dot-sm">

@@ -135,6 +135,12 @@
   &--md {
     padding: 14px 16px;
   }
+
+  &--flex {
+    width: auto;
+    padding-left: 26px;
+    padding-right: 20px;
+  }
 }
 
 .dot {
@@ -168,6 +174,14 @@
       left: 27px;
     }
   }
+
+  &--red {
+    background-color: $red;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
 }
 
 .f-table {
@@ -181,5 +195,74 @@
     flex-grow: 1;
     display: flex;
     justify-content: center;
+  }
+}
+
+.tooltip {
+  position: relative;
+
+  &:hover {
+    .tooltip__body {
+      @include media(">=tablet") {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__trigger {
+  }
+
+  &__body {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    background-color: $bg-light-gray;
+    box-shadow: 0px 4px 50px #d2d2db;
+    border-radius: 5px;
+    width: 360px;
+    right: -20px;
+    top: calc(100% + 10px);
+    transition: opacity 0.4s ease, 0.4s visibility 0s ease;
+
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      display: block;
+      position: absolute;
+      background-color: $bg-light-gray;
+      right: 20px;
+      top: -5px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__title {
+    padding: 15px 21px 7px;
+    font-weight: 500;
+    font-size: rem(13px);
+    line-height: 20px;
+    color: $color-text-violet;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $light-gray;
+
+    .icon-cup {
+      width: 29px;
+      margin-right: 9px;
+      color: red;
+    }
+  }
+
+  &__content {
+    display: flex;
+    text-transform: capitalize;
+    padding: 15px 20px;
+
+    .sausage {
+      white-space: nowrap;
+    }
   }
 }
