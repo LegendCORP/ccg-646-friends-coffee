@@ -20,3 +20,11 @@ $drinks = [
     ['id' => 4, 'name' => 'Latte', 'calories' => 240, 'icon' => 'latte', 'price' => 3.95,],
 ];
 
+$totalTypes = [['type' => 'drinks', 'color' => 'red'], ['type' => 'dollars', 'color' => 'blue'], ['type' => 'calories', 'color' => 'yellow']];
+
+$ingredients = [
+    'cappuccino' => 'Decaffeinated Coffee, Hot Milk, Sugar (optional)',
+    'coffee' => 'Coffee, Boiled Water, Sugar (optional)',
+    'tea' => 'Tea, Cold Water, Ice (optional)',
+    'latte' => 'Coffee, Frothy Milk, Sugar (optional)',
+];

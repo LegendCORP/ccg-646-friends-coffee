@@ -26,13 +26,8 @@
                             class="social-links__link icon-facebook js-game-share-top-link" data-social-links="facebook"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-facebook"></i>
-                            <svg class="cup" width="53" height="53"
-                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                            <svg class="svg-icon cup">
+                                <use xlink:href="#icon-cup"></use>
                             </svg>
                         </a>
                     </li>
@@ -41,13 +36,8 @@
                             class="social-links__link icon-twitter js-game-share-top-link" data-social-links="twitter"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-twitter"></i>
-                            <svg class="cup" width="53" height="53"
-                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                            <svg class="svg-icon cup">
+                                <use xlink:href="#icon-cup"></use>
                             </svg>
                         </a>
                     </li>
@@ -55,13 +45,8 @@
                         <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
                         <span class="social-links__link js-copy-share-text-btn">
                             <i class="fa fa-link"></i>
-                            <svg class="cup" width="53" height="53"
-                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                            <svg class="svg-icon cup">
+                                <use xlink:href="#icon-cup"></use>
                             </svg>
                         </span>
                     </li>
@@ -105,7 +90,7 @@
                                         <span><?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?></span>
 
                                         <svg class="svg-icon">
-                                            <use x='0' y='0' xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
+                                            <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
                                         </svg>
                                     </div>
                                     <div class="friend-drink__values">
@@ -134,7 +119,8 @@
 
             <section class="section section--white">
                 <h3 class="text-center heading-decorated"><span>Total. All seasons</span></h3>
-                <div class="f-table">
+                <!-- total seasons desktop -->
+                <div class="f-table total-seasons total-seasons--desktop">
                             <!-- head -->
                     <div class="f-table__row f-table__row--head">
                         <div class="f-table__td">Title</div>
@@ -216,6 +202,18 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                                <!-- total seasons mobile -->
+                <div class="total-seasons total-seasons--mobile">
+                    <?php foreach($totalTypes as $type): ?>
+                        <div class="sausage sausage--dot-md <?php echo 'sausage--' . $type['color'] ?>">
+                            <i class="dot dot--md"></i>
+
+                            Total <?php echo $type['type'] ?>
+                        </div>
+
+                    <?php endforeach; ?>
                 </div>
 
 
@@ -409,13 +407,8 @@
                         class="social-links__link icon-facebook js-game-share-top-link" data-social-links="facebook"
                         target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-facebook"></i>
-                        <svg class="cup" width="53" height="53"
-                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                        <svg class="svg-icon cup">
+                            <use xlink:href="#icon-cup"></use>
                         </svg>
                     </a>
                 </li>
@@ -424,13 +417,8 @@
                         class="social-links__link icon-twitter js-game-share-top-link" data-social-links="twitter"
                         target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-twitter"></i>
-                        <svg class="cup" width="53" height="53"
-                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                        <svg class="svg-icon cup">
+                            <use xlink:href="#icon-cup"></use>
                         </svg>
                     </a>
                 </li>
@@ -438,13 +426,8 @@
                     <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
                     <span class="social-links__link js-copy-share-text-btn">
                         <i class="fa fa-link"></i>
-                        <svg class="cup" width="53" height="53"
-                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                        <svg class="svg-icon cup">
+                            <use xlink:href="#icon-cup"></use>
                         </svg>
                     </span>
                 </li>
