@@ -6,12 +6,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: -17px;
+    margin-right: -17px;
   }
 }
 
 .friend-drinks-read-more {
   margin: -10px;
   padding: 10px;
+
+  @include media(">=tablet") {
+    // margin: -17px;
+    // padding: 17px;
+  }
 }
 
 .friend-drink {
@@ -29,6 +36,8 @@
     height: 116px;
     flex-grow: 1;
     max-width: 337px;
+    margin-left: 17px;
+    margin-right: 17px;
   }
 
   &__info {
@@ -40,12 +49,18 @@
     @include media(">=tablet") {
       margin-bottom: 10px;
       margin-left: 14px;
+      font-size: 16px;
     }
 
     .svg-icon {
       width: 16px;
       height: 16px;
       margin-left: 9px;
+
+      @include media(">=tablet") {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 
@@ -53,20 +68,31 @@
     display: flex;
     align-items: flex-end;
 
+    @include media(">=tablet") {
+    }
+
     .svg-icon {
       width: 13px;
       height: 13px;
+
+      @include media(">=tablet") {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
   &__drink {
-    font-size: 12px;
     line-height: 1;
     font-weight: bold;
     display: flex;
     align-items: flex-end;
     margin-bottom: 4px;
     color: $color-text-violet;
+
+    @include media(">=tablet") {
+      margin-bottom: 8px;
+    }
   }
 
   &__values {

@@ -60,11 +60,18 @@
       min-width: 103px;
     }
   }
+
+  &--sm {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .sausage {
   border-radius: 1000px;
   position: relative;
+  background-color: $white;
+  color: $black;
 
   &--red {
     color: $white;
@@ -81,17 +88,42 @@
     background-color: $yellow;
   }
 
+  &--dot-sm {
+    width: 72px;
+    padding-left: 20px;
+    margin-right: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+
+    @include media(">=tablet") {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 26px;
+      width: 78px;
+      font-size: 13px;
+    }
+  }
+
   &--sm {
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
-    width: 72px;
-    padding-left: 20px;
-    margin-right: 14px;
+    padding: 4px 18px;
 
     @include media(">=tablet") {
-      width: 87px;
+      font-size: 13px;
     }
+
+    &.sausage--blue {
+      @include media(">=tablet") {
+        width: 87px;
+      }
+    }
+  }
+
+  &--md {
+    padding: 14px 16px;
   }
 }
 
@@ -107,5 +139,25 @@
     width: 4px;
     height: 4px;
     left: 10px;
+
+    @include media(">=tablet") {
+      width: 5px;
+      height: 5px;
+      left: 14px;
+    }
+  }
+}
+
+.f-table {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  &__td {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
   }
 }
