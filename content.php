@@ -49,3 +49,15 @@ $drinks = [
 ];
 
 $totalTypes = [['type' => 'drinks', 'color' => 'red'], ['type' => 'dollars', 'color' => 'blue'], ['type' => 'calories', 'color' => 'yellow']];
+
+function getColor($index) {
+    if($index + 1 == 1 || ($index+1)%3 == 1) {
+        return 'red';
+    }
+    elseif(($index+1)%3 == 0) {
+        return 'yellow';
+    }
+    else{
+        return 'blue';
+    }
+}

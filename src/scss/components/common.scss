@@ -163,14 +163,25 @@
   &--mob-list {
     flex-grow: 1;
     padding-left: 20px;
+    font-weight: 500;
+    color: $color-text-violet;
   }
 }
 
-.js-acrd-sns {
+.accordion {
   &__trigger {
+    i {
+      transition: transform 0.4s ease;
+    }
+
+    &.active {
+      i {
+        transform: rotate(180deg);
+      }
+    }
   }
 
-  &-target {
+  &__target {
     height: 0;
     overflow: hidden;
     opacity: 0;
