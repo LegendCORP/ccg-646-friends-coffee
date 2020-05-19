@@ -69,7 +69,7 @@
                     </div>
                     <div class="read-more friend-drinks-read-more js-readmore-top">
                         <div class="friend-drinks">
-
+                            <!-- fiend drink table -->
                         <?php foreach($friends as $friendDrink): ?>
                         
                             <div class="friend-drink">
@@ -123,7 +123,7 @@
                                         <div class="sausage sausage--red sausage--dot-sm">
                                             <i class="dot dot--sm"></i>
 
-                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['price'] ;?>
+                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['dollars'] ;?>
 
                                         </div>
                                         <div class="sausage sausage--blue sausage--dot-sm">
@@ -154,7 +154,7 @@
                         <?php foreach($friends as $friend): ?>
                             <div class="f-table__td">
                                 <div class="avatar avatar--sm">
-                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="monika">
+                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
                                 </div>
                                 <?php echo $friend['name'] ;?>
                             </div>
@@ -204,15 +204,51 @@
                 </div>
 
                                 <!-- total seasons mobile -->
-                <div class="total-seasons total-seasons--mobile">
-                    <?php foreach($totalTypes as $type): ?>
-                        <div class="sausage sausage--md sausage--dot-md <?php echo 'sausage--' . $type['color'] ?>">
-                            <i class="dot dot--md"></i>
+                <div class="total-seasons total-seasons--mobile js-acrd-sns-container">
+                    <?php 
+                        $counter = 0;
+                        foreach($totalTypes as $type): 
+                    ?>
+                        <div class="total-seasons__block">
+                            <div class="sausage sausage--md sausage--dot-md <?php echo 'sausage--' . $type['color'] ?> js-acrd-sns-trigger" data-trigger="<?php echo $counter+1; ?>">
+                                <i class="dot dot--md"></i>
 
-                            Total <?php echo $type['type'] ?>
+                                Total <?php echo $type['type'] ?>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="total-seasons__mob-list js-acrd-sns-target">
+                                <?php foreach($friends as $friend): ?>
+
+                                    <div class="total-seasons__mob-list-item">
+                                        <div class="avatar avatar--mob-md">
+                                            <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
+                                        </div>
+                                        <span class="name name--mob-list"><?php echo $friend['name'] ;?></span>
+                                        <div class="sausage <?php echo 'sausage--' . $type['color'] ?>">
+                                            <?php
+                                                $prefix = '';
+                                                if($type['type'] == 'dollars') $prefix = '$ ';
+                                                if($type['type'] == 'drinks') {
+                                                    $total += array_sum($friend['seasonsDrinks']);
+                                                    echo array_sum($friend['seasonsDrinks']) ;
+                                                }else{
+                                                    $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                                    echo $prefix . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                                }
+                                            ?>
+                                        </div>
+                                    </div>
+
+                                <?php endforeach; ?>
+
+                            </div>
                         </div>
 
-                    <?php endforeach; ?>
+                    <?php 
+                        $counter++;
+                        endforeach; 
+                    ?>
                 </div>
 
 

@@ -3,6 +3,7 @@ $breakpoints: (
   "mobile": 480px,
   "phone": 600px,
   "tablet": 768px,
+  "tablet-xl": 860px,
   "desktop": 1024px,
   "widescreen": 1200px,
 );
@@ -41,3 +42,4 @@ $media-expressions: (
 @import "components/freind-drinks-block";
 @import "components/comments-block";
 @import "components/sausages";
+@import "components/sections";
