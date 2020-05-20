@@ -26,3 +26,9 @@ new AnimatedAccordion(
   ".js-acrd-sns-trigger",
   ".js-acrd-sns-target"
 ).init();
+
+new AnimatedAccordion(
+  ".js-acrd-mobchar-container",
+  ".js-acrd-mobchar-trigger",
+  ".js-acrd-mobchar-target"
+).init();

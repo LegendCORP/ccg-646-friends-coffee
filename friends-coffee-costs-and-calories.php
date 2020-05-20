@@ -340,14 +340,14 @@
                 </div>
 
                         <!-- info per each character mobile -->
-                <div class="info-character-section--mobile">
+                <div class="info-character-section--mobile js-acrd-mobchar-container">
                     <?php 
                         $counter = 0;
                         foreach ($friends as $friend): 
                     ?>
                         <div class="info-character info-character--mobile">
                                     <!-- head -->
-                            <div class="sausage sausage--<?php echo getColor($counter); ?>">
+                            <div class="accordion__trigger sausage sausage--<?php echo getColor($counter); ?> js-acrd-mobchar-trigger" data-trigger="<?php echo $counter + 1; ?>">
                                 <div class="avatar avatar--sm">
                                     <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
                                 </div>
@@ -358,18 +358,20 @@
                                 </div>
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </div>
-
-                            <?php
-                                $season = 1; 
-                                while($season <= count($friend['seasonsDrinks'])): 
-                            ?>
-                                <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?>">
+                            <div class="accordion__target js-acrd-mobchar-target">
+                                <?php
+                                    $season = 1; 
+                                    while($season <= count($friend['seasonsDrinks'])): 
+                                ?>
+                                    <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?>">
                                         Season <?php echo $season ;?>
-                                </div>
-                            <?php 
-                                $season++;
-                                endwhile; 
-                            ?>
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </div>
+                                <?php 
+                                    $season++;
+                                    endwhile; 
+                                ?>
+                            </div>
                         </div>
                     <?php
                         $counter++; 
