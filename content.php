@@ -14,17 +14,50 @@ $friends = [
 ];
 
 $drinks = [
-    ['id' => 1, 'name' => 'Decaf Cappuccino', 'calories' => 165, 'icon' => 'cappuccino', 'price' => 3.95,],
-    ['id' => 2, 'name' => 'Ice tea', 'calories' => 90, 'icon' => 'tea', 'price' => 2.25,],
-    ['id' => 3, 'name' => 'Coffee black', 'calories' => 16, 'icon' => 'coffee', 'price' => 2.50,],
-    ['id' => 4, 'name' => 'Latte', 'calories' => 240, 'icon' => 'latte', 'price' => 3.95,],
+    [
+        'id' => 1,   
+        'name' => 'Decaf Cappuccino',
+        'calories' => 165, 
+        'icon' => 'cappuccino', 
+        'dollars' => 3.95, 
+        'ingredients' => ['espresso', 'milk', 'sugar'],
+    ],
+    [
+        'id' => 2,   
+        'name' => 'Ice tea',
+        'calories' => 90, 
+        'icon' => 'tea', 
+        'dollars' => 2.25, 
+        'ingredients' => ['coffee', 'boiled water', 'sugar'],
+    ],
+    [
+        'id' => 3,   
+        'name' => 'Coffee black',
+        'calories' => 16, 
+        'icon' => 'coffee', 
+        'dollars' => 2.50, 
+        'ingredients' => ['tea', 'cold water', 'ice '],
+    ],
+    [
+        'id' => 4,   
+        'name' => 'Latte',
+        'calories' => 240, 
+        'icon' => 'latte', 
+        'dollars' => 3.95, 
+        'ingredients' => ['coffee', 'frothy milk', 'sugar'],
+    ],
 ];
 
 $totalTypes = [['type' => 'drinks', 'color' => 'red'], ['type' => 'dollars', 'color' => 'blue'], ['type' => 'calories', 'color' => 'yellow']];
 
-$ingredients = [
-    'cappuccino' => 'Decaffeinated Coffee, Hot Milk, Sugar (optional)',
-    'coffee' => 'Coffee, Boiled Water, Sugar (optional)',
-    'tea' => 'Tea, Cold Water, Ice (optional)',
-    'latte' => 'Coffee, Frothy Milk, Sugar (optional)',
-];
+function getColor($index) {
+    if($index + 1 == 1 || ($index+1)%3 == 1) {
+        return 'red';
+    }
+    elseif(($index+1)%3 == 0) {
+        return 'yellow';
+    }
+    else{
+        return 'blue';
+    }
+}
