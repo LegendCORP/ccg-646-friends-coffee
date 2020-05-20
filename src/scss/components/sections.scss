@@ -38,7 +38,8 @@
   }
 
   &__mob-list {
-    border: 1px solid $red;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 28px;
     padding: 0 10px;
   }
@@ -61,7 +62,134 @@
 }
 
 .info-character {
-  .accordion__trigger {
+  &--mobile {
+    margin-bottom: 44px;
+  }
+
+  &__trigger {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 71px;
+    padding-right: 17px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: relative;
+    z-index: 10;
+
+    .name {
+      flex-grow: 1;
+      font-family: $secondary-font;
+      font-size: 22px;
+    }
+
+    .avatar {
+      position: absolute;
+      bottom: -5px;
+      left: -5px;
+    }
+  }
+
+  &__seasons {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 21px;
+    padding-top: 20px;
+    background-color: $bg-light-gray;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .js-acrd-mobchar-target {
+    box-shadow: 0 -25px 0 0 $bg-light-gray;
+  }
+
+  &__season {
+    margin-bottom: 10px;
+
+    .sausage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      padding: 10px 17px 10px 24px;
+
+      &.active {
+      }
+
+      .name {
+      }
+    }
+  }
+
+  &__season-prop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    .name {
+      display: flex;
+      align-items: center;
+
+      .dot {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &--desktop {
+    margin-bottom: 86px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .f-table__row--head-lg {
+      position: relative;
+      padding: 25px 17px 25px 50px;
+      margin-left: 15px;
+
+      .avatar--xl {
+        position: absolute;
+        left: -15px;
+        bottom: 0;
+      }
+
+      .f-table__td {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.info-character-section {
+  &--desktop {
+    display: none;
+
+    @include media(">=desktop") {
+      display: block;
+    }
+  }
+
+  &--mobile {
+    @include media(">=desktop") {
+      display: none;
+    }
   }
 }

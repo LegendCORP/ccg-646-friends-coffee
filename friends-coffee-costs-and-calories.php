@@ -217,7 +217,7 @@
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </div>
 
-                            <div class="total-seasons__mob-list js-acrd-sns-target accordion__target">
+                            <div class="total-seasons__mob-list border--<?php echo $type['color']; ?> js-acrd-sns-target accordion__target">
                                 <?php 
                                     $total = 0;
                                     foreach($friends as $friend): 
@@ -262,15 +262,18 @@
                 <h3 class="text-center heading-decorated"><span>Information per each character</span></h3>
                         <!-- info per each character desktop -->
                 <div class="info-character-section--desktop">
-                    <?php foreach ($friends as $friend): ?>
+                    <?php
+                        $counter = 0;
+                        foreach ($friends as $friend): 
+                    ?>
                         <div class="f-table info-character info-character--desktop">
                                     <!-- head -->
-                            <div class="f-table__row f-table__row--head-lg sausage sausage--red">
+                            <div class="f-table__row f-table__row--head-lg sausage sausage--<?php echo getColor($counter); ?>">
                                 <div class="f-table__td">
-                                    <div class="avatar avatar--sm">
+                                    <div class="avatar avatar--xl">
                                         <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
                                     </div>
-                                    <?php echo $friend['name'] ;?>
+                                    <div class="name name--xl"><?php echo $friend['name'] ;?></div>
                                 </div>
 
                                 <?php
@@ -336,7 +339,10 @@
                             <?php endforeach; ?>
 
                         </div>
-                    <?php endforeach; ?>
+                    <?php
+                        $counter++; 
+                        endforeach; 
+                    ?>
                 </div>
 
                         <!-- info per each character mobile -->
@@ -346,31 +352,103 @@
                         foreach ($friends as $friend): 
                     ?>
                         <div class="info-character info-character--mobile">
-                                    <!-- head -->
-                            <div class="accordion__trigger sausage sausage--<?php echo getColor($counter); ?> js-acrd-mobchar-trigger" data-trigger="<?php echo $counter + 1; ?>">
-                                <div class="avatar avatar--sm">
+                                    
+                            <div class="accordion__trigger info-character__trigger sausage sausage--<?php echo getColor($counter); ?> js-acrd-mobchar-trigger" data-trigger="<?php echo $counter + 1; ?>">
+                                <div class="avatar avatar--xl">
                                     <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
                                 </div>
                                 <div class="name">
                                     <?php 
-                                        echo $friend['name'] . $counter ;
+                                        echo $friend['name'];
                                     ?>
                                 </div>
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </div>
                             <div class="accordion__target js-acrd-mobchar-target">
-                                <?php
-                                    $season = 1; 
-                                    while($season <= count($friend['seasonsDrinks'])): 
-                                ?>
-                                    <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?>">
-                                        Season <?php echo $season ;?>
-                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                    </div>
-                                <?php 
-                                    $season++;
-                                    endwhile; 
-                                ?>
+                                <div class="info-character__seasons js-acrd-mob-sns-container">
+                                    <?php
+                                        $season = 1; 
+                                        $totalDrinks = 0;
+                                        $totalDollars = 0;
+                                        $totalCalories = 0;
+                                        while($season <= count($friend['seasonsDrinks'])): 
+                                    ?>
+                                        <div class="info-character__season">
+                                            <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?> js-acrd-mob-sns-trigger accordion__trigger" data-trigger="<?php echo $season; ?>">
+                                                Season <?php echo $season ;?>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="js-acrd-mob-sns-target accordion__target">
+                                                <?php foreach($totalTypes as $type): ?>
+                                                    <div class="info-character__season-prop">
+                                                        <div class="name">
+                                                            <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
+                                                            <?php 
+                                                                $text = '';
+                                                                $value = '';
+                                                                $drinksCount = $friend['seasonsDrinks'][$season - 1];
+                                                                if($type['type'] == 'drinks') {
+                                                                    $text = 'Number of Drinks';
+                                                                    $value = $drinksCount;
+                                                                    $totalDrinks += $drinksCount;
+                                                                }
+                                                                if($type['type'] == 'dollars') {
+                                                                    $text = 'Price of drink';
+                                                                    $value = $drinks[$friend['drinkId'] - 1]['dollars'] * $drinksCount;
+                                                                    $totalDollars += $value;
+                                                                    $value = '$ ' . $value;
+                                                                }
+                                                                if($type['type'] == 'calories') {
+                                                                    $text = 'Calories in drink';
+                                                                    $value = $drinks[$friend['drinkId'] - 1]['calories'] * $drinksCount;
+                                                                    $totalCalories += $value;
+                                                                }
+                                                                echo $text; 
+                                                            ?>
+                                                        </div>
+                                                        <?php echo $value; ?>
+                                                    </div>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        </div>
+                                    <?php 
+                                        $season++;
+                                        endwhile; 
+                                    ?>
+                                     <div class="info-character__season">
+                                        <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?> js-acrd-mob-sns-trigger" data-trigger="<?php echo $season; ?>">
+                                            All Seasons
+                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="js-acrd-mob-sns-target accordion__target">
+                                            <?php foreach($totalTypes as $type): ?>
+                                                <div class="info-character__season-prop">
+                                                    <div class="name">
+                                                        <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
+                                                        <?php 
+                                                            $text = '';
+                                                            $value = '';
+                                                            if($type['type'] == 'drinks') {
+                                                                $text = 'Number of Drinks';
+                                                                $value = $totalDrinks;
+                                                            }
+                                                            if($type['type'] == 'dollars') {
+                                                                $text = 'Price of drink';
+                                                                $value = '$ ' . $totalDollars;
+                                                            }
+                                                            if($type['type'] == 'calories') {
+                                                                $text = 'Calories in drink';
+                                                                $value = $totalCalories;
+                                                            }
+                                                            echo $text; 
+                                                        ?>
+                                                    </div>
+                                                    <?php echo $value; ?>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        </div>
+                                     </div>
+                                </div>
                             </div>
                         </div>
                     <?php
