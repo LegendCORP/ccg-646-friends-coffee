@@ -1,0 +1,140 @@
+.sausage {
+  border-radius: 1000px;
+  position: relative;
+  background-color: $white;
+  color: $black;
+
+  &--red {
+    color: $white;
+    background-color: $red;
+  }
+
+  &--blue {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &--yellow {
+    color: $white;
+    background-color: $yellow;
+  }
+
+  &--gray {
+    background-color: $bg-light-gray;
+  }
+
+  &--border {
+    background-color: $white;
+    border: 1px solid;
+
+    &-red {
+      color: $red;
+      border-color: $red;
+    }
+
+    &-yellow {
+      color: $yellow;
+      border-color: $yellow;
+    }
+
+    &-blue {
+      color: $blue;
+      border-color: $blue;
+    }
+  }
+
+  &--sm {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 4px 18px;
+
+    @include media(">=tablet") {
+      font-size: 13px;
+    }
+  }
+
+  &--md {
+    padding: 14px 16px;
+  }
+
+  &--dot-sm {
+    width: 72px;
+    padding-left: 10px;
+    margin-right: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    @include media(">=tablet") {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 14px;
+      width: 78px;
+      font-size: 13px;
+    }
+  }
+
+  &--dot-md {
+    // padding-left: 45px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    @include media(">=tablet") {
+    }
+  }
+
+  &--flex {
+    width: auto;
+  }
+}
+
+.dot {
+  background-color: $white;
+  display: inline-block;
+  border-radius: 50%;
+  // position: absolute;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+
+  &--sm {
+    width: 4px;
+    height: 4px;
+    left: 10px;
+
+    @include media(">=tablet") {
+      width: 5px;
+      height: 5px;
+      left: 14px;
+    }
+  }
+
+  &--md {
+    width: 8px;
+    height: 8px;
+    left: 27px;
+
+    @include media(">=tablet") {
+      width: 8px;
+      height: 8px;
+      left: 27px;
+    }
+  }
+
+  &--red {
+    background-color: $red;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+  }
+}

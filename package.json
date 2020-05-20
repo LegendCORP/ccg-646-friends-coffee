@@ -14,6 +14,7 @@
     "leftpad": "0.0.1",
     "nodelist-foreach-polyfill": "^1.2.0",
     "smooth-scroll": "^16.1.2",
+    "swiper": "^5.4.0",
     "trappies": "0.0.3",
     "url-polyfill": "^1.1.8"
   },
