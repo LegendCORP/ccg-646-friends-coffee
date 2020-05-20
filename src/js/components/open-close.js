@@ -1,4 +1,4 @@
-class OpenClose {
+export class OpenClose {
     constructor(holders, opts) {
         if (!document.querySelectorAll(holders)) {
             return;

@@ -1,3 +1,9 @@
+#wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
 .section {
   margin-bottom: 50px;
 }
@@ -6,17 +12,134 @@
   font-size: 13px;
   line-height: 1.77;
   color: $color-text-gray;
+  border-radius: 15px;
+  background-color: $white;
+  position: relative;
+  
+  &__head {
+    background-color: #f6f6fb;
+    border-radius: 15px 15px 0 0;
+    padding: 35px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: $color-text-gray;
+    
+    @include media('>=tablet') {
+      padding: 40px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  &__expert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  &__avatar {
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fabc16;
+    background-color: #2b415e;
+    box-shadow: 0 5px 10px rgba(26, 30, 56, 0.2);
+    padding: 1px;
+    margin-right: 10px;
+    
+    @include media('>=tablet') {
+      width: 122px;
+      margin-right: 20px;
+    }
+  }
+  
+  &__name {
+    font: 22px/1 $secondary-font;
+    color: $color-text-violet;
+    margin: 0 40px 10px 0;
+    
+    @include media('>=tablet') {
+      margin: 0 0 10px;
+    }
+  }
+  
+  &__text {
+    display: block;
+  }
+  
+  &__button {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.2;
+    color: $white;
+    background: #02b2e7;
+    box-shadow: 0 4px 12px rgba(27, 31, 54, 0.05);
+    border-radius: 24px;
+    padding: 5px 10px 5px 20px;
+    position: relative;
+    
+    @include media('>=tablet') {
+      font-size: 13px;
+      padding: 10px 20px 10px 30px;
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $white;
+      margin-top: -3px;
+      
+      @include media('>=tablet') {
+        left: 15px;
+      }
+    }
+  }
+  
+  &__text-decoration {
+    text-decoration: underline;
+  }
+  
+  &__image {
+    width: 35px;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    
+    @include media('>=tablet') {
+      position: static;
+      width: 89px;
+      margin-left: 20px;
+    }
+  }
 }
 
 .comments-swiper {
+  padding: 20px;
+  
+  @include media('>=tablet') {
+    padding: 40px;
+  }
+  
   &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
+    
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      box-sizing: border-box;
+    }
   }
 
   &__slide {
     display: flex;
+    height: auto;
 
     @include media('>=tablet') {
       padding: 0 15px 30px;
@@ -85,10 +208,72 @@
 
 .text-center {
   text-align: center;
-  max-width: 600px;
   margin: 0 auto 50px;
 }
 
 .text-white {
   color: $white;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 40px;
+  height: 60px;
+  background-color: $white;
+  box-shadow: 0px 4px 12px #e8e9eb;
+  outline: none;
+  color: $bg-blue;
+  
+  @include media('>=tablet') {
+    display: none;
+  }
+  
+  &.swiper-button-disabled {
+    opacity: 1;
+  }
+}
+
+.swiper-button-prev {
+  left: -20px;
+  border-radius: 0 5px 5px 0;
+}
+
+.swiper-button-next {
+  right: -20px;
+  border-radius: 5px 0 0 5px;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 15px;
+  color: $bg-blue;
+  
+  @include media('>=tablet') {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    visibility: hidden;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: $bg-blue;
+    width: 6px;
+    height: 6px;
+    opacity: 1;
+    @include animate(transform background-color box-shadow);
+    
+    .swiper-container-horizontal & {
+      margin: 0 10px;
+    }
+    
+    &-active {
+      transform: scale(2);
+      background-color: #02b2e7;
+      box-shadow: 0 0 0 2px $white, 0 0 0 3px #02b2e7;
+    }
+  }
 }
