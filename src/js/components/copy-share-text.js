@@ -1,4 +1,4 @@
-class CopyShareText {
+export class CopyShareText {
     constructor(selector) {
         this.selector = selector;
         if (!document.querySelector(this.selector)) {
