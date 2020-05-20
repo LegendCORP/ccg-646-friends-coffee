@@ -26,8 +26,13 @@
                             class="social-links__link icon-facebook js-game-share-top-link" data-social-links="facebook"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-facebook"></i>
-                            <svg class="svg-icon cup">
-                                <use xlink:href="#icon-cup"></use>
+                            <svg class="cup" width="53" height="53"
+                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
+                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
+                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
+                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
+                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
+                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
                             </svg>
                         </a>
                     </li>
@@ -36,8 +41,13 @@
                             class="social-links__link icon-twitter js-game-share-top-link" data-social-links="twitter"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-twitter"></i>
-                            <svg class="svg-icon cup">
-                                <use xlink:href="#icon-cup"></use>
+                            <svg class="cup" width="53" height="53"
+                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
+                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
+                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
+                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
+                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
+                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
                             </svg>
                         </a>
                     </li>
@@ -45,8 +55,13 @@
                         <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
                         <span class="social-links__link js-copy-share-text-btn">
                             <i class="fa fa-link"></i>
-                            <svg class="svg-icon cup">
-                                <use xlink:href="#icon-cup"></use>
+                            <svg class="cup" width="53" height="53"
+                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
+                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
+                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
+                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
+                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
+                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
                             </svg>
                         </span>
                     </li>
@@ -69,7 +84,7 @@
                     </div>
                     <div class="read-more friend-drinks-read-more js-readmore-top">
                         <div class="friend-drinks">
-                            <!-- fiend drink table -->
+
                         <?php foreach($friends as $friendDrink): ?>
                         
                             <div class="friend-drink">
@@ -88,45 +103,19 @@
                                     <div class="friend-drink__drink">
                             
                                         <span><?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?></span>
-                                        <div class="tooltip">
-                                            <div class="tooltip-trigger">
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="tooltip__body">
-                                                <div class="tooltip__title">
-                                                    <svg class="svg-icon icon-cup">
-                                                        <use xlink:href="#icon-cup"></use>
-                                                    </svg>
-                                                    Ingredients of <?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?>
-                                                </div>
-                                                <div class="tooltip__content">
-                                                    <?php 
-                                                    $counter = 0;
-                                                    foreach ($drinks[$friendDrink['drinkId'] - 1]['ingredients'] as $ingredient): 
-                                                    ?>
-                                                        <div class="sausage sausage--flex sausage--dot-sm">
-                                                            <i class="dot dot--sm dot--<?php echo $counter%2 ? 'blue' : 'red'; ?>"></i>
-                                                            <?php echo $ingredient; ?>
-                                                        </div>
-                                                    <?php 
-                                                    $counter++;
-                                                    endforeach; 
-                                                    ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
+
+                                        <svg class="svg-icon">
+                                            <use x='0' y='0' xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
+                                        </svg>
                                     </div>
                                     <div class="friend-drink__values">
-                                        <div class="sausage sausage--red sausage--dot-sm">
+                                        <div class="sausage sausage--sm sausage--red sausage--dot">
                                             <i class="dot dot--sm"></i>
 
-                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['dollars'] ;?>
+                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['price'] ;?>
 
                                         </div>
-                                        <div class="sausage sausage--blue sausage--dot-sm">
+                                        <div class="sausage sausage--sm sausage--blue sausage--dot">
                                             <i class="dot dot--sm"></i>
                             
                                             <?php echo 'Cal ' . $drinks[$friendDrink['drinkId'] - 1]['calories'] ;?>
@@ -140,243 +129,6 @@
                         
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="section section--white">
-                <h3 class="text-center heading-decorated"><span>Total. All seasons</span></h3>
-                <!-- total seasons desktop -->
-                <div class="f-table total-seasons total-seasons--desktop">
-                            <!-- head -->
-                    <div class="f-table__row f-table__row--head">
-                        <div class="f-table__td">Title</div>
-
-                        <?php foreach($friends as $friend): ?>
-                            <div class="f-table__td">
-                                <div class="avatar avatar--sm">
-                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
-                                </div>
-                                <?php echo $friend['name'] ;?>
-                            </div>
-                        <?php endforeach; ?>
-
-                        <div class="f-table__td">Total per seasons</div>
-                    </div>
-                            <!-- rows -->
-                    <?php foreach($totalTypes as $type): ?>
-                        
-                        <div class="f-table__row sausage sausage--<?php echo $type['color']; ?> sausage--md">
-                            <div class="f-table__td">
-                                <div class="sausage sausage--sm sausage--flex">
-                                    <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
-                                    Total <?php echo $type['type']; ?>
-                                </div>
-                            </div>
-                            <?php
-                                $total = 0; 
-                                foreach($friends as $friend): 
-                            ?>
-                            <div class="f-table__td">
-                                <div class="sausage sausage--sm">
-                                <?php
-                                    $prefix = '';
-                                    if($type['type'] == 'dollars') $prefix = '$ ';
-                                    if($type['type'] == 'drinks') {
-                                        $total += array_sum($friend['seasonsDrinks']);
-                                        echo array_sum($friend['seasonsDrinks']) ;
-                                    }else{
-                                        $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
-                                        echo $prefix . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
-                                    }
-                                ?>
-                                </div>
-                            </div>
-                            <?php endforeach; ?>
-                            <div class="f-table__td">
-                                <div class="sausage sausage--sm">
-                                    <?php echo $total; ?>
-                                </div>
-                            </div>
-                        </div>
-
-                    <?php endforeach; ?>
-
-                </div>
-
-                                <!-- total seasons mobile -->
-                <div class="total-seasons total-seasons--mobile js-acrd-sns-container">
-                    <?php 
-                        $counter = 0;
-                        foreach($totalTypes as $type): 
-                    ?>
-                        <div class="total-seasons__block">
-                            <div class="sausage sausage--md sausage--dot-md <?php echo 'sausage--' . $type['color'] ?> js-acrd-sns-trigger accordion__trigger" data-trigger="<?php echo $counter+1; ?>">
-                                <i class="dot dot--md"></i>
-
-                                <div class="name">Total <?php echo $type['type'] ?></div>
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="total-seasons__mob-list js-acrd-sns-target accordion__target">
-                                <?php 
-                                    $total = 0;
-                                    foreach($friends as $friend): 
-                                ?>
-
-                                    <div class="total-seasons__mob-list-item">
-                                        <div class="avatar avatar--mob-md">
-                                            <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
-                                        </div>
-                                        <span class="name name--mob-list"><?php echo $friend['name'] ;?></span>
-                                        <div class="sausage <?php echo 'sausage--' . $type['color'] ?>">
-                                            <?php
-                                                $prefix = '';
-                                                if($type['type'] == 'dollars') $prefix = '$ ';
-                                                if($type['type'] == 'drinks') {
-                                                    $total += array_sum($friend['seasonsDrinks']);
-                                                    echo array_sum($friend['seasonsDrinks']) ;
-                                                }else{
-                                                    $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
-                                                    echo $prefix . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
-                                                }
-                                            ?>
-                                        </div>
-                                    </div>
-
-                                <?php endforeach; ?>
-
-                                <div class="total-seasons__mob-list-item">
-                                    <span class="name name--mob-list">Total per seasons</span>
-                                    <div class="sausage <?php echo 'sausage--' . $type['color'] ?>"><?php echo $total ;?></div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    <?php 
-                        $counter++;
-                        endforeach; 
-                    ?>
-                </div>
-
-                <h3 class="text-center heading-decorated"><span>Information per each character</span></h3>
-                        <!-- info per each character desktop -->
-                <div class="info-character-section--desktop">
-                    <?php foreach ($friends as $friend): ?>
-                        <div class="f-table info-character info-character--desktop">
-                                    <!-- head -->
-                            <div class="f-table__row f-table__row--head-lg sausage sausage--red">
-                                <div class="f-table__td">
-                                    <div class="avatar avatar--sm">
-                                        <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
-                                    </div>
-                                    <?php echo $friend['name'] ;?>
-                                </div>
-
-                                <?php
-                                    $season = 1; 
-                                    while($season <= count($friend['seasonsDrinks'])): 
-                                ?>
-                                    <div class="f-table__td">
-                                        Season <?php echo $season ;?>
-                                    </div>
-                                <?php 
-                                    $season++;
-                                    endwhile; 
-                                ?>
-
-                                <div class="f-table__td">All seasons</div>
-                            </div>
-                                    <!-- rows -->
-                            <?php foreach($totalTypes as $type): ?>
-                                
-                                <div class="f-table__row sausage sausage--gray sausage--md">
-                                    <div class="f-table__td">
-                                        <div class="sausage sausage--sm sausage--flex">
-                                            <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
-                                            <?php
-                                                $text = '';
-                                                if($type['type'] == 'drinks') $text = 'Number of Drinks';
-                                                if($type['type'] == 'dollars') $text = 'Price of drink';
-                                                if($type['type'] == 'calories') $text = 'Calories in drink';
-                                                echo $text; 
-                                            ?>
-                                        </div>
-                                    </div>
-                                    <?php
-                                        $total = 0;
-                                        $seasons = count($friend['seasonsDrinks']);
-                                        for($season = 1; $season <= $seasons; $season++): 
-                                    ?>
-                                    <div class="f-table__td">
-                                        <div class="sausage sausage--sm">
-                                        <?php
-                                            $prefix = '';
-                                            $drinksCount = $friend['seasonsDrinks'][$season - 1];
-                                            if($type['type'] == 'dollars') $prefix = '$ ';
-                                            if($type['type'] == 'drinks') {
-                                                $total += $drinksCount;
-                                                echo $drinksCount;
-                                            } else {
-                                                $drinkProp = $drinks[$friend['drinkId'] - 1][$type['type']] * $drinksCount;
-                                                $total += $drinkProp;
-                                                echo $prefix . $drinkProp;
-                                            }
-                                        ?>
-                                        </div>
-                                    </div>
-                                        <?php endfor; ?>
-                                    <div class="f-table__td">
-                                        <div class="sausage sausage--sm sausage--<?php echo $type['color']; ?>">
-                                            <?php echo $total; ?>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            <?php endforeach; ?>
-
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-
-                        <!-- info per each character mobile -->
-                <div class="info-character-section--mobile js-acrd-mobchar-container">
-                    <?php 
-                        $counter = 0;
-                        foreach ($friends as $friend): 
-                    ?>
-                        <div class="info-character info-character--mobile">
-                                    <!-- head -->
-                            <div class="accordion__trigger sausage sausage--<?php echo getColor($counter); ?> js-acrd-mobchar-trigger" data-trigger="<?php echo $counter + 1; ?>">
-                                <div class="avatar avatar--sm">
-                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
-                                </div>
-                                <div class="name">
-                                    <?php 
-                                        echo $friend['name'] . $counter ;
-                                    ?>
-                                </div>
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </div>
-                            <div class="accordion__target js-acrd-mobchar-target">
-                                <?php
-                                    $season = 1; 
-                                    while($season <= count($friend['seasonsDrinks'])): 
-                                ?>
-                                    <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?>">
-                                        Season <?php echo $season ;?>
-                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                    </div>
-                                <?php 
-                                    $season++;
-                                    endwhile; 
-                                ?>
-                            </div>
-                        </div>
-                    <?php
-                        $counter++; 
-                        endforeach; 
-                    ?>
                 </div>
             </section>
             <div class="text-center text-white">
@@ -572,8 +324,13 @@
                         class="social-links__link icon-facebook js-game-share-top-link" data-social-links="facebook"
                         target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-facebook"></i>
-                        <svg class="svg-icon cup">
-                            <use xlink:href="#icon-cup"></use>
+                        <svg class="cup" width="53" height="53"
+                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
+                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
+                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
+                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
+                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
+                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
                         </svg>
                     </a>
                 </li>
@@ -582,8 +339,13 @@
                         class="social-links__link icon-twitter js-game-share-top-link" data-social-links="twitter"
                         target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-twitter"></i>
-                        <svg class="svg-icon cup">
-                            <use xlink:href="#icon-cup"></use>
+                        <svg class="cup" width="53" height="53"
+                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
+                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
+                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
+                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
+                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
+                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
                         </svg>
                     </a>
                 </li>
@@ -591,8 +353,13 @@
                     <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
                     <span class="social-links__link js-copy-share-text-btn">
                         <i class="fa fa-link"></i>
-                        <svg class="svg-icon cup">
-                            <use xlink:href="#icon-cup"></use>
+                        <svg class="cup" width="53" height="53"
+                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
+                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
+                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
+                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
+                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
+                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
                         </svg>
                     </span>
                 </li>
