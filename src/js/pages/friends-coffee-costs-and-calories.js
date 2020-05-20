@@ -1,9 +1,9 @@
 console.log("friends");
 
 import { ReadMoreToggler } from "../components/read-more";
+import { AnimatedAccordion } from "../components/togglers";
 import { OpenClose } from "../components/open-close";
-import { CopyShareText } from "../components/copy-share-text";
-import Swiper from '../components/swiper';
+
 
 new ReadMoreToggler({
   container: ".js-readmore-container-top",
@@ -66,3 +66,8 @@ function initAll() {
 }
 
 initAll();
+new AnimatedAccordion(
+  ".js-acrd-sns-container",
+  ".js-acrd-sns-trigger",
+  ".js-acrd-sns-target"
+).init();

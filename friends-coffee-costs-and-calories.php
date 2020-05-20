@@ -69,7 +69,7 @@
                     </div>
                     <div class="read-more friend-drinks-read-more js-readmore-top">
                         <div class="friend-drinks">
-
+                            <!-- fiend drink table -->
                         <?php foreach($friends as $friendDrink): ?>
                         
                             <div class="friend-drink">
@@ -88,16 +88,42 @@
                                     <div class="friend-drink__drink">
                             
                                         <span><?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?></span>
-
-                                        <svg class="svg-icon">
-                                            <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
-                                        </svg>
+                                        <div class="tooltip">
+                                            <div class="tooltip-trigger">
+                                                <svg class="svg-icon">
+                                                    <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="tooltip__body">
+                                                <div class="tooltip__title">
+                                                    <svg class="svg-icon icon-cup">
+                                                        <use xlink:href="#icon-cup"></use>
+                                                    </svg>
+                                                    Ingredients of <?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?>
+                                                </div>
+                                                <div class="tooltip__content">
+                                                    <?php 
+                                                    $counter = 0;
+                                                    foreach ($drinks[$friendDrink['drinkId'] - 1]['ingredients'] as $ingredient): 
+                                                    ?>
+                                                        <div class="sausage sausage--flex sausage--dot-sm">
+                                                            <i class="dot dot--sm dot--<?php echo $counter%2 ? 'blue' : 'red'; ?>"></i>
+                                                            <?php echo $ingredient; ?>
+                                                        </div>
+                                                    <?php 
+                                                    $counter++;
+                                                    endforeach; 
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                     <div class="friend-drink__values">
                                         <div class="sausage sausage--red sausage--dot-sm">
                                             <i class="dot dot--sm"></i>
 
-                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['price'] ;?>
+                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['dollars'] ;?>
 
                                         </div>
                                         <div class="sausage sausage--blue sausage--dot-sm">
@@ -128,7 +154,7 @@
                         <?php foreach($friends as $friend): ?>
                             <div class="f-table__td">
                                 <div class="avatar avatar--sm">
-                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="monika">
+                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
                                 </div>
                                 <?php echo $friend['name'] ;?>
                             </div>
@@ -136,90 +162,220 @@
 
                         <div class="f-table__td">Total per seasons</div>
                     </div>
-                            <!-- row1   -->
-                    <div class="f-table__row sausage sausage--red sausage--md">
-                        <div class="f-table__td"><div class="sausage  sausage--sm">Total drinks</div></div>
-                        <?php
-                            $total = 0; 
-                            foreach($friends as $friend): 
-                        ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                            <?php 
-                                $total += array_sum($friend['seasonsDrinks']);
-                                echo array_sum($friend['seasonsDrinks']) ;
-                            ?>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                                <?php echo $total; ?>
-                            </div>
-                        </div>
-                    </div>
-                            <!-- row2   -->
-                    <div class="f-table__row sausage sausage--blue sausage--md">
-                        <div class="f-table__td"><div class="sausage  sausage--sm">Total dollars</div></div>
-                        <?php
-                            $total = 0; 
-                            foreach($friends as $friend): 
-                        ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                            <?php 
-                                $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['price'];
-                                echo '$ ' . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['price'];
-                            ?>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                                <?php echo '$ ' . $total; ?>
-                            </div>
-                        </div>
-                    </div>
-                            <!-- row3   -->
-                    <div class="f-table__row sausage sausage--yellow sausage--md">
-                        <div class="f-table__td"><div class="sausage  sausage--sm">Total calories</div></div>
-                        <?php
-                            $total = 0; 
-                            foreach($friends as $friend): 
-                        ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                            <?php 
-                                $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['calories'];
-                                echo array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1]['calories'] ;
-                            ?>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-                        <div class="f-table__td">
-                            <div class="sausage sausage--sm">
-                                <?php echo $total; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                                <!-- total seasons mobile -->
-                <div class="total-seasons total-seasons--mobile">
+                            <!-- rows -->
                     <?php foreach($totalTypes as $type): ?>
-                        <div class="sausage sausage--dot-md <?php echo 'sausage--' . $type['color'] ?>">
-                            <i class="dot dot--md"></i>
-
-                            Total <?php echo $type['type'] ?>
+                        
+                        <div class="f-table__row sausage sausage--<?php echo $type['color']; ?> sausage--md">
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm sausage--flex">
+                                    <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
+                                    Total <?php echo $type['type']; ?>
+                                </div>
+                            </div>
+                            <?php
+                                $total = 0; 
+                                foreach($friends as $friend): 
+                            ?>
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm">
+                                <?php
+                                    $prefix = '';
+                                    if($type['type'] == 'dollars') $prefix = '$ ';
+                                    if($type['type'] == 'drinks') {
+                                        $total += array_sum($friend['seasonsDrinks']);
+                                        echo array_sum($friend['seasonsDrinks']) ;
+                                    }else{
+                                        $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                        echo $prefix . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                    }
+                                ?>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm">
+                                    <?php echo $total; ?>
+                                </div>
+                            </div>
                         </div>
 
                     <?php endforeach; ?>
+
                 </div>
 
+                                <!-- total seasons mobile -->
+                <div class="total-seasons total-seasons--mobile js-acrd-sns-container">
+                    <?php 
+                        $counter = 0;
+                        foreach($totalTypes as $type): 
+                    ?>
+                        <div class="total-seasons__block">
+                            <div class="sausage sausage--md sausage--dot-md <?php echo 'sausage--' . $type['color'] ?> js-acrd-sns-trigger accordion__trigger" data-trigger="<?php echo $counter+1; ?>">
+                                <i class="dot dot--md"></i>
+
+                                <div class="name">Total <?php echo $type['type'] ?></div>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="total-seasons__mob-list js-acrd-sns-target accordion__target">
+                                <?php 
+                                    $total = 0;
+                                    foreach($friends as $friend): 
+                                ?>
+
+                                    <div class="total-seasons__mob-list-item">
+                                        <div class="avatar avatar--mob-md">
+                                            <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
+                                        </div>
+                                        <span class="name name--mob-list"><?php echo $friend['name'] ;?></span>
+                                        <div class="sausage <?php echo 'sausage--' . $type['color'] ?>">
+                                            <?php
+                                                $prefix = '';
+                                                if($type['type'] == 'dollars') $prefix = '$ ';
+                                                if($type['type'] == 'drinks') {
+                                                    $total += array_sum($friend['seasonsDrinks']);
+                                                    echo array_sum($friend['seasonsDrinks']) ;
+                                                }else{
+                                                    $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                                    echo $prefix . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                                }
+                                            ?>
+                                        </div>
+                                    </div>
+
+                                <?php endforeach; ?>
+
+                                <div class="total-seasons__mob-list-item">
+                                    <span class="name name--mob-list">Total per seasons</span>
+                                    <div class="sausage <?php echo 'sausage--' . $type['color'] ?>"><?php echo $total ;?></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    <?php 
+                        $counter++;
+                        endforeach; 
+                    ?>
+                </div>
 
                 <h3 class="text-center heading-decorated"><span>Information per each character</span></h3>
+                        <!-- info per each character desktop -->
+                <div class="info-character-section--desktop">
+                    <?php foreach ($friends as $friend): ?>
+                        <div class="f-table info-character info-character--desktop">
+                                    <!-- head -->
+                            <div class="f-table__row f-table__row--head-lg sausage sausage--red">
+                                <div class="f-table__td">
+                                    <div class="avatar avatar--sm">
+                                        <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
+                                    </div>
+                                    <?php echo $friend['name'] ;?>
+                                </div>
 
-            
+                                <?php
+                                    $season = 1; 
+                                    while($season <= count($friend['seasonsDrinks'])): 
+                                ?>
+                                    <div class="f-table__td">
+                                        Season <?php echo $season ;?>
+                                    </div>
+                                <?php 
+                                    $season++;
+                                    endwhile; 
+                                ?>
+
+                                <div class="f-table__td">All seasons</div>
+                            </div>
+                                    <!-- rows -->
+                            <?php foreach($totalTypes as $type): ?>
+                                
+                                <div class="f-table__row sausage sausage--gray sausage--md">
+                                    <div class="f-table__td">
+                                        <div class="sausage sausage--sm sausage--flex">
+                                            <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
+                                            <?php
+                                                $text = '';
+                                                if($type['type'] == 'drinks') $text = 'Number of Drinks';
+                                                if($type['type'] == 'dollars') $text = 'Price of drink';
+                                                if($type['type'] == 'calories') $text = 'Calories in drink';
+                                                echo $text; 
+                                            ?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                        $total = 0;
+                                        $seasons = count($friend['seasonsDrinks']);
+                                        for($season = 1; $season <= $seasons; $season++): 
+                                    ?>
+                                    <div class="f-table__td">
+                                        <div class="sausage sausage--sm">
+                                        <?php
+                                            $prefix = '';
+                                            $drinksCount = $friend['seasonsDrinks'][$season - 1];
+                                            if($type['type'] == 'dollars') $prefix = '$ ';
+                                            if($type['type'] == 'drinks') {
+                                                $total += $drinksCount;
+                                                echo $drinksCount;
+                                            } else {
+                                                $drinkProp = $drinks[$friend['drinkId'] - 1][$type['type']] * $drinksCount;
+                                                $total += $drinkProp;
+                                                echo $prefix . $drinkProp;
+                                            }
+                                        ?>
+                                        </div>
+                                    </div>
+                                        <?php endfor; ?>
+                                    <div class="f-table__td">
+                                        <div class="sausage sausage--sm sausage--<?php echo $type['color']; ?>">
+                                            <?php echo $total; ?>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php endforeach; ?>
+
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                        <!-- info per each character mobile -->
+                <div class="info-character-section--mobile">
+                    <?php 
+                        $counter = 0;
+                        foreach ($friends as $friend): 
+                    ?>
+                        <div class="info-character info-character--mobile">
+                                    <!-- head -->
+                            <div class="sausage sausage--<?php echo getColor($counter); ?>">
+                                <div class="avatar avatar--sm">
+                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
+                                </div>
+                                <div class="name">
+                                    <?php 
+                                        echo $friend['name'] . $counter ;
+                                    ?>
+                                </div>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+
+                            <?php
+                                $season = 1; 
+                                while($season <= count($friend['seasonsDrinks'])): 
+                            ?>
+                                <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?>">
+                                        Season <?php echo $season ;?>
+                                </div>
+                            <?php 
+                                $season++;
+                                endwhile; 
+                            ?>
+                        </div>
+                    <?php
+                        $counter++; 
+                        endforeach; 
+                    ?>
+                </div>
             </section>
             <div class="text-center text-white">
                 <div class="text-center">
