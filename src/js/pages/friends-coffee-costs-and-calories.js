@@ -2,7 +2,8 @@ console.log("friends");
 
 import { ReadMoreToggler } from "../components/read-more";
 import { OpenClose } from "../components/open-close";
-import { CopyShareText } from "../components/copy-share-text";
+import { CopyShareText, EmbedCopy } from "../components/copy-share-text";
+import { ScrollToggler } from "../components/scroll-to-top";
 import Swiper from "swiper";
 // import "swiper/css/swiper.css";
 
@@ -63,11 +64,15 @@ function mySwiper() {
   window.addEventListener("resize", resizeHandler);
 }
 
-function initAll() {
-  mySwiper();
-}
+mySwiper();
 
-initAll();
+new ScrollToggler(".js-scroll-to-top");
+new ScrollToggler(".js-scroll-socials");
+
+const embeds = [...document.querySelectorAll(".js-copy-input-text")];
+embeds.map((embed) => {
+  new EmbedCopy(embed);
+});
 
 new AnimatedAccordion(
   ".js-acrd-sns-container",

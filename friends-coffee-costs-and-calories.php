@@ -15,7 +15,7 @@
         <?php include "content.php"; ?>
 
         <div id="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container header__container">
                 <a href="/" class="header__logo-link">
                     <img class="header__logo-img" src="images/logo.svg" alt="CardsChat.com">
@@ -41,9 +41,10 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="social-links__item">
-                        <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
-                        <span class="social-links__link js-copy-share-text-btn">
+                    <li class="social-links__item js-copy-input-text">
+                        <div class="copy-notification" style="">Text Copied!</div>
+                        <input class="social-links__input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
+                        <span class="social-links__link">
                             <i class="fa fa-link"></i>
                             <svg class="svg-icon cup">
                                 <use xlink:href="#icon-cup"></use>
@@ -51,7 +52,7 @@
                         </span>
                     </li>
                 </ul>
-                <ul class="social-links social-links--left">
+                <ul class="social-links social-links--left js-scroll-socials">
                     <li class="social-links__item">
                         <a href="//www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.cardschat.com%2FFriends-coffee-costs-and-calories&quote=The%20Friends%20characters%20spent%20most%20of%20their%20time%20at%20Central%20Perk%2C%20but%20how%20many%20coffees%20did%20they%20really%20drink%2C%20how%20much%20would%20this%20have%20cost%20them%20and%20how%20many%20calories%20would%20they%20have%20consumed%3F%20Check%20out%20the%20results%20for%20yourself%2C%20but%20Oh.%20My.%20God…%20https%3A%2F%2Fwww.cardschat.com%2FFriends-coffee-costs-and-calories%2F"
                             class="social-links__link icon-facebook js-game-share-top-link" data-social-links="facebook"
@@ -66,9 +67,10 @@
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
-                    <li class="social-links__item">
-                        <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
-                        <span class="social-links__link js-copy-share-text-btn">
+                    <li class="social-links__item js-copy-input-text">
+                    <div class="copy-notification" style="">Text Copied!</div>
+                        <input class="social-links__input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
+                        <span class="social-links__link">
                             <i class="fa fa-link"></i>
                         </span>
                     </li>
@@ -703,9 +705,10 @@
                         </svg>
                     </a>
                 </li>
-                <li class="social-links__item">
-                    <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
-                    <span class="social-links__link js-copy-share-text-btn">
+                <li class="social-links__item js-copy-input-text">
+                    <div class="copy-notification" style="">Text Copied!</div>
+                    <input class="social-links__input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
+                    <span class="social-links__link">
                         <i class="fa fa-link"></i>
                         <svg class="svg-icon cup">
                             <use xlink:href="#icon-cup"></use>
@@ -797,7 +800,7 @@
                 </div>
             </div>
         </footer>
-        <a href="#header" class="back-to-top-btn smooth-scroll"><i class="icon-arrow-down"></i></a>
+        <a href="#header" class="js-scroll-to-top smooth-scroll"><i class="icon-arrow-down"></i></a>
         </div>
         <script src="dist/js/pages/friends-coffee-costs-and-calories.js"></script> 
     </body>

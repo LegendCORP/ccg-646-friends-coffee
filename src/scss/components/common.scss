@@ -236,3 +236,18 @@
   color: $color-text-violet;
 }
 
+.js-copy-input-text {
+  position: relative;
+}
+
+.copy-notification {
+  position: absolute;
+  display: none;
+  width: 120px;
+  color: white;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  right: auto;
+  text-align: center;
+}
