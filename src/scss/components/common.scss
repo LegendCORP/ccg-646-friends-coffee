@@ -23,7 +23,7 @@
     }
 
     i {
-      font-size: 25px;
+      font-size: 2.5rem;
       transition: transform 0.3s ease;
       height: 8px;
       display: block;
@@ -145,8 +145,8 @@
   &__title {
     padding: 15px 21px 7px;
     font-weight: 500;
-    font-size: rem(13px);
-    line-height: 20px;
+    font-size: 13rem;
+    line-height: 1.54;
     color: $color-text-violet;
     display: flex;
     align-items: center;
@@ -182,8 +182,8 @@
 
   &--xl {
     font-family: $secondary-font;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2.4rem;
+    line-height: 0.83;
   }
 }
 
@@ -231,8 +231,8 @@
 
 .table-num {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 1.3rem;
+  line-height: 1.54;
   color: $color-text-violet;
 }
 
