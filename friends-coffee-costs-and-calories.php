@@ -202,7 +202,7 @@
                             <div class="f-table__td">
                                 <div class="sausage sausage--sm sausage--flex">
                                     <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
-                                    Total <?php echo $type['type']; ?>
+                                    Total <?php echo $type['type'] == 'dollars' ? 'amount' : $type['type']; ?>
                                 </div>
                             </div>
                             <?php
@@ -228,7 +228,7 @@
                             <div class="f-table__td">
                                 <div class="sausage sausage--sm">
                                     <?php
-                                        if($type['type'] == 'dollars') $total = '$ ' . $total;
+                                        if($type['type'] == 'dollars') $total = '$ ' . number_format($total, 1, '.', ',');
                                         echo $total; 
                                     ?>
                                 </div>
@@ -283,7 +283,12 @@
 
                                 <div class="total-seasons__mob-list-item">
                                     <span class="name name--mob-list">Total per seasons</span>
-                                    <div class="sausage <?php echo 'sausage--' . $type['color'] ?>"><?php echo $total ;?></div>
+                                    <div class="sausage <?php echo 'sausage--' . $type['color'] ?>">
+                                        <?php
+                                            if($type['type'] == 'dollars') $total = '$ ' . number_format($total, 1, '.', ',');  
+                                            echo $total ;
+                                        ?>
+                                    </div>
                                 </div>
 
                             </div>
@@ -336,7 +341,7 @@
                                             <?php
                                                 $text = '';
                                                 if($type['type'] == 'drinks') $text = 'Number of Drinks';
-                                                if($type['type'] == 'dollars') $text = 'Price of drink';
+                                                if($type['type'] == 'dollars') $text = 'Total amount';
                                                 if($type['type'] == 'calories') $text = 'Calories in drink';
                                                 echo $text; 
                                             ?>
@@ -368,7 +373,7 @@
                                     <div class="f-table__td">
                                         <div class="sausage sausage--sm sausage--<?php echo $type['color']; ?>">
                                             <?php 
-                                                if($type['type'] == 'dollars') $total = '$ ' . $total;
+                                                if($type['type'] == 'dollars') $total = '$ ' . number_format($total, 1, '.', ',');
                                                 echo $total; 
                                             ?>
                                         </div>
@@ -432,7 +437,7 @@
                                                                     $totalDrinks += $drinksCount;
                                                                 }
                                                                 if($type['type'] == 'dollars') {
-                                                                    $text = 'Price of drink';
+                                                                    $text = 'Total amount';
                                                                     $value = $drinks[$friend['drinkId'] - 1]['dollars'] * $drinksCount;
                                                                     $totalDollars += $value;
                                                                     $value = '$ ' . $value;
@@ -472,8 +477,8 @@
                                                                 $value = $totalDrinks;
                                                             }
                                                             if($type['type'] == 'dollars') {
-                                                                $text = 'Price of drink';
-                                                                $value = '$ ' . $totalDollars;
+                                                                $text = 'Total amount';
+                                                                $value = '$ ' . number_format($totalDollars, 1, '.', ',');
                                                             }
                                                             if($type['type'] == 'calories') {
                                                                 $text = 'Calories in drink';
