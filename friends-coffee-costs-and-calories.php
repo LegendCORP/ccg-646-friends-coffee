@@ -18,7 +18,7 @@
         <header class="header">
             <div class="container header__container">
                 <a href="/" class="header__logo-link">
-                    <img class="header__logo-img" src="images/logo.png" alt="CardsChat.com">
+                    <img class="header__logo-img" src="images/logo.svg" alt="CardsChat.com">
                 </a>
                 <ul class="social-links social-links--header">
                     <li class="social-links__item">
@@ -719,7 +719,7 @@
                 <div class="pre-footer">
                     <div class="pre-footer__holder">
                         <a href="/" class="pre-footer__logo">
-                            <img class="lazy"src="images/logo.png" alt="CardsChat.com">
+                            <img src="images/logo.svg" alt="CardsChat.com">
                         </a>
                         <div class="pre-footer__copyrights"><span class="pre-footer__copyrights-date">Data collected in 2020.</span>&copy; © $year Cardschat.com. All Rights Reserved</div>
                     </div>

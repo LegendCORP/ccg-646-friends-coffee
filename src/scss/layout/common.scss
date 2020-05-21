@@ -6,6 +6,8 @@
 }
 
 .section {
+  position: relative;
+  
   &--white {
     background-color: $white;
     border-radius: 5px;
@@ -28,7 +30,7 @@
 
     @include media(">=tablet") {
       border-radius: 15px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -87,3 +89,36 @@
 .svg-icon {
   fill: currentColor;
 }
+
+.decor {
+  display: none;
+  
+  @include media('>=desktop') {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  &__coffee {
+    @include media('>=desktop') {
+      top: 41px;
+      right: -375px;
+    }
+  }
+  
+  &__coffee-beans-small {
+    @include media('>=desktop') {
+      bottom: 162px;
+      right: -60px;
+      z-index: 0;
+    }
+  }
+  
+  &__coffee-beans {
+    @include media('>=desktop') {
+      top: -38px;
+      right: -374px;
+    }
+  }
+}
+
