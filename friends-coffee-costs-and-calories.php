@@ -312,7 +312,7 @@
                                         for($season = 1; $season <= $seasons; $season++): 
                                     ?>
                                     <div class="f-table__td">
-                                        <div class="sausage sausage--sm">
+                                        <div class="table-num">
                                         <?php
                                             $prefix = '';
                                             $drinksCount = $friend['seasonsDrinks'][$season - 1];
@@ -331,7 +331,10 @@
                                         <?php endfor; ?>
                                     <div class="f-table__td">
                                         <div class="sausage sausage--sm sausage--<?php echo $type['color']; ?>">
-                                            <?php echo $total; ?>
+                                            <?php 
+                                                if($type['type'] == 'dollars') $total = '$ ' . $total;
+                                                echo $total; 
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
