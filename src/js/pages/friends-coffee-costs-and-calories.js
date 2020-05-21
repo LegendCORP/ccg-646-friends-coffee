@@ -5,9 +5,13 @@ import { OpenClose } from "../components/open-close";
 import { CopyShareText, EmbedCopy } from "../components/copy-share-text";
 import { ScrollToggler } from "../components/scroll-to-top";
 import Swiper from "swiper";
+import * as SmoothScroll from "smooth-scroll";
+
 // import "swiper/css/swiper.css";
 
 import { AnimatedAccordion } from "../components/togglers";
+
+new SmoothScroll(".js-smooth-scroll");
 
 new ReadMoreToggler({
   container: ".js-readmore-container-top",
