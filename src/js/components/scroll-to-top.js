@@ -1,11 +1,20 @@
-export const scrollToTop = () => {
-  const btn = document.querySelector(".js-scroll-to-top");
-  if (!btn) return;
-  document.addEventListener("scroll", () => {
-    if (window.pageYOffset > 300) {
-      btn.classList.add("visible");
+export function ScrollToggler(selector, offset, classToToggle) {
+  this.btn = document.querySelector(selector);
+  this.offset = offset || 300;
+  this.classToToggle = classToToggle || "visible";
+  if (!this.btn) return;
+
+  this.onScroll = function () {
+    if (window.pageYOffset > this.offset) {
+      this.btn.classList.add(this.classToToggle);
     } else {
-      btn.classList.remove("visible");
+      this.btn.classList.remove(this.classToToggle);
     }
-  });
-};
+  };
+
+  this.init = function () {
+    document.addEventListener("scroll", this.onScroll.bind(this));
+  };
+
+  this.init();
+}
