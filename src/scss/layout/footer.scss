@@ -341,11 +341,10 @@
     font-size: 16px;
     line-height: 1;
     text-decoration: none;
-    text-align: center;
 
     @include media('>=tablet') {
       text-align: center;
-      padding: 11px 60px 11px 20px;
+      padding: 14px 60px 14px 20px;
     }
   }
 
@@ -402,10 +401,11 @@
   &__opener {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: transparent;
     border: 1px solid $white;
     border-radius: 5px;
-    padding: 16px 18px 16px 20px;
+    padding: 13px 18px 12px 20px;
     font-size: 16px;
     line-height: 1.1;
     color: $white;
@@ -472,8 +472,9 @@
     }
   }
 
-  .fa {
-    font-size: 13px;
+  .fa-angle-down {
+    font-size: 23px;
+    line-height: 0.7;
   }
 }
 

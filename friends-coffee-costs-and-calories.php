@@ -725,7 +725,7 @@
                     </div>
                     <div class="pre-footer__buttons">
                         <div class="dropdown open-close">
-                            <a href="#" class="dropdown__opener opener">Sources <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <a href="#" class="dropdown__opener opener">Sources <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                             <div class="dropdown__holder">
                                 <ul class="dropdown__holder__list">
                                     <li class="dropdown__holder__list__item">

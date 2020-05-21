@@ -6,7 +6,7 @@ $link-size-mob: 40px;
   position: relative;
   z-index: 3;
 
-  @include media(">=tablet") {
+  @include media(">=widescreen") {
     display: flex;
   }
 
@@ -33,7 +33,7 @@ $link-size-mob: 40px;
   }
   
   &--left {
-    @include media('>=desktop') {
+    @include media('>=widescreen') {
       position: fixed;
       top: 300px;
       left: 50px;
@@ -159,12 +159,20 @@ $link-size-mob: 40px;
     }
 
     .social-links--header & {
-      width: 53px;
-      height: 53px;
+      font-size: 12px;
+      width: 34px;
+      height: 34px;
       border-radius: 0;
       border: 0;
-      padding: 12px 10px 0 0;
+      padding: 6px 5px 0 0;
       background-color: transparent;
+      
+      @include media('>=tablet') {
+        font-size: 23px;
+        width: 53px;
+        height: 53px;
+        padding: 12px 10px 0 0;
+      }
     }
 
     .social-links--large & {
@@ -189,10 +197,15 @@ $link-size-mob: 40px;
       position: absolute;
       top: 0;
       left: 0;
-      width: 53px;
-      height: 53px;
+      width: 34px;
+      height: 34px;
       color: $white;
       @include animate(opacity);
+      
+      @include media('>=tablet') {
+        width: 53px;
+        height: 53px;
+      }
 
       .social-links--large & {
         width: 70px;
