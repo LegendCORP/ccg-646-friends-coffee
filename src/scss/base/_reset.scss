@@ -17,6 +17,7 @@ body {
     background-color: $base-background-color;
     background-image: url('../images/background-image.jpg');
     background-size: 100% auto;
+    background-repeat: no-repeat;
     font: #{$font-size-base}/#{$line-height-base} $base-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
