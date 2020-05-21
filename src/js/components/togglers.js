@@ -203,10 +203,10 @@ export class ActiveClassSwitcher {
   }
 
   toggle(triggerIndex) {
-    console.log(
-      this.triggers[triggerIndex].classList.contains(this.classToToggle),
-      this.classToToggle
-    );
+    // console.log(
+    //   this.triggers[triggerIndex].classList.contains(this.classToToggle),
+    //   this.classToToggle
+    // );
 
     if (this.triggers[triggerIndex].classList.contains(this.classToToggle)) {
       this.triggers[triggerIndex].classList.remove(this.classToToggle);
@@ -217,6 +217,8 @@ export class ActiveClassSwitcher {
     this.targets[triggerIndex].classList.add(this.classToToggle);
   }
 }
+
+//////////////////////// ANIMATED ACCORDION
 
 export class AnimatedAccordion extends ActiveClassSwitcher {
   constructor(
@@ -231,11 +233,20 @@ export class AnimatedAccordion extends ActiveClassSwitcher {
   }
 
   setHeight(element, dir) {
-    console.log(element);
+    // console.log(element);
     const setValue = element.scrollHeight;
-    dir
-      ? element.style.setProperty("height", `${setValue}px`)
-      : element.style.setProperty("height", "0");
+    if (dir) {
+      element.style.setProperty("height", `${setValue}px`);
+      setTimeout(() => {
+        element.style.setProperty("height", "auto");
+      }, this.animationDuration);
+    } else {
+      element.style.setProperty("height", `${setValue}px`);
+      setTimeout(() => {
+        element.style.setProperty("height", "0");
+      }, 100);
+      // element.style.setProperty("height", "0");
+    }
 
     return setValue;
   }
@@ -245,14 +256,27 @@ export class AnimatedAccordion extends ActiveClassSwitcher {
       trigger.classList.remove(this.classToToggle)
     );
     this.targets.map((target) => {
-      target.classList.remove(this.classToToggle);
-      this.setHeight(target, false);
+      if (target.classList.contains(this.classToToggle)) {
+        this.setHeight(target, false);
+        target.classList.remove(this.classToToggle);
+      }
     });
   }
 
   setActiveElements(triggerIndex) {
     this.toggle(triggerIndex);
     this.setHeight(this.targets[triggerIndex], true);
+  }
+
+  init() {
+    this.triggers.map((trigger) =>
+      trigger.addEventListener("click", this.handleClick.bind(this))
+    );
+    this.targets.map((target) => {
+      if (!target.classList.contains(this.classToToggle)) {
+        this.setHeight(target, false);
+      }
+    });
   }
 
   onResize() {

@@ -7,7 +7,7 @@
 .section {
   margin-bottom: 63px;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     margin-bottom: 50px;
   }
 }
@@ -17,7 +17,7 @@
   font-weight: normal;
   margin-bottom: 15px;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     font-size: 40px;
     margin-bottom: 8px;
   }
@@ -34,7 +34,7 @@
   line-height: 24px;
   font-weight: 500;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     font-size: 13px;
     line-height: 20px;
     margin: 0 auto 46px;
@@ -45,7 +45,7 @@
   font-size: 14px;
   line-height: 2;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     font-size: 16px;
     line-height: 1.75;
   }
@@ -63,7 +63,7 @@
   background-color: $white;
   position: relative;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     margin-bottom: 96px;
   }
 
@@ -77,7 +77,7 @@
     font-size: 14px;
     color: $color-text-gray;
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       padding: 38px 20px 37px;
       font-size: 16px;
     }
@@ -100,7 +100,7 @@
     padding: 1px;
     margin: 5px 10px 0 0;
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       width: 130px;
       margin: 0 16px 0 0;
       border-width: 4px;
@@ -112,7 +112,7 @@
     color: $color-text-violet;
     margin: 0 40px 7px 0;
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       margin: 0 0 18px;
       font-size: 24px;
     }
@@ -122,7 +122,7 @@
     display: block;
     margin-bottom: 1px;
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       margin: 6px 0 11px;
     }
   }
@@ -138,13 +138,13 @@
     padding: 7px 21px 7px 20px;
     position: relative;
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       font-size: 13px;
       padding: 7px 37px 6px 27px;
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       left: 10px;
@@ -154,7 +154,7 @@
       background-color: $white;
       margin-top: -2px;
 
-      @include media('>=desktop') {
+      @include media(">=desktop") {
         left: 15px;
       }
     }
@@ -171,7 +171,7 @@
     top: 8px;
     right: -3px;
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       position: static;
       width: 89px;
       margin: 17px 0 0 34px;
@@ -182,11 +182,11 @@
     padding: 27px 10px 31px;
     overflow: hidden;
 
-    @include media('>=tablet') {
+    @include media(">=tablet") {
       padding: 22px 16px 2px;
     }
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       padding: 38px 36px 20px;
     }
   }
@@ -195,13 +195,12 @@
 .comments-swiper {
   overflow: visible;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     padding-top: 9px;
   }
 
   &__wrapper {
-
-    @include media('>=tablet') {
+    @include media(">=tablet") {
       display: flex;
       flex-wrap: wrap;
       flex-shrink: 0;
@@ -213,12 +212,12 @@
     display: flex;
     height: auto;
 
-    @include media('>=tablet') {
+    @include media(">=tablet") {
       padding: 0 15px 30px;
       flex-basis: 50%;
     }
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       flex-basis: 33.33%;
     }
   }
@@ -229,7 +228,7 @@
   border-radius: 20px;
   padding: 34px 24px 19px;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     padding: 30px 30px 19px;
   }
 
@@ -244,7 +243,7 @@
     width: 48px;
     height: 48px;
 
-    @include media('>=tablet') {
+    @include media(">=tablet") {
       width: 75px;
       height: 75px;
     }
@@ -253,7 +252,7 @@
   &__wrap {
     padding-left: 10px;
 
-    @include media('>=desktop') {
+    @include media(">=desktop") {
       padding-left: 20px;
     }
   }
@@ -263,7 +262,7 @@
     display: flex;
     margin: 0 0 -1px;
 
-    @include media('>=tablet') {
+    @include media(">=tablet") {
       margin: 0 0 3px;
     }
   }
@@ -274,7 +273,7 @@
     height: 20px;
     margin: 1px 0 0 9px;
 
-    @include media('>=tablet') {
+    @include media(">=tablet") {
       width: 20px;
       height: 20px;
     }
@@ -288,7 +287,7 @@
     margin-right: -20px;
     color: $color-text-violet;
 
-    @include media('>=tablet') {
+    @include media(">=tablet") {
       font-size: 16px;
       margin: -5px -15px 0 0;
     }
@@ -298,7 +297,7 @@
       height: 26px;
       margin: -6px 0 0 5px;
 
-      @include media('>=tablet') {
+      @include media(">=tablet") {
         width: 30px;
         height: 30px;
         margin: -7px 0 0 5px;
@@ -320,7 +319,7 @@
   outline: none;
   color: $bg-blue;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     display: none;
   }
 
@@ -350,7 +349,7 @@
   margin-top: 28px;
   color: $bg-blue;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -382,7 +381,7 @@
   left: -9999px;
   visibility: hidden;
 
-  @include media('>=tablet') {
+  @include media(">=tablet") {
     position: static;
     visibility: visible;
   }
