@@ -26,13 +26,8 @@
                             class="social-links__link icon-facebook js-game-share-top-link" data-social-links="facebook"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-facebook"></i>
-                            <svg class="cup" width="53" height="53"
-                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                            <svg class="svg-icon cup">
+                                <use xlink:href="#icon-cup"></use>
                             </svg>
                         </a>
                     </li>
@@ -41,13 +36,8 @@
                             class="social-links__link icon-twitter js-game-share-top-link" data-social-links="twitter"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-twitter"></i>
-                            <svg class="cup" width="53" height="53"
-                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                            <svg class="svg-icon cup">
+                                <use xlink:href="#icon-cup"></use>
                             </svg>
                         </a>
                     </li>
@@ -55,13 +45,8 @@
                         <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
                         <span class="social-links__link js-copy-share-text-btn">
                             <i class="fa fa-link"></i>
-                            <svg class="cup" width="53" height="53"
-                                 viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                                <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                                c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                                c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                                C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                                 M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                            <svg class="svg-icon cup">
+                                <use xlink:href="#icon-cup"></use>
                             </svg>
                         </span>
                     </li>
@@ -84,7 +69,7 @@
                     </div>
                     <div class="read-more friend-drinks-read-more js-readmore-top">
                         <div class="friend-drinks">
-
+                            <!-- fiend drink table -->
                         <?php foreach($friends as $friendDrink): ?>
                         
                             <div class="friend-drink">
@@ -103,19 +88,45 @@
                                     <div class="friend-drink__drink">
                             
                                         <span><?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?></span>
-
-                                        <svg class="svg-icon">
-                                            <use x='0' y='0' xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
-                                        </svg>
+                                        <div class="tooltip">
+                                            <div class="tooltip-trigger">
+                                                <svg class="svg-icon">
+                                                    <use xlink:href="#icon-<?php echo $drinks[$friendDrink['drinkId'] - 1]['icon']; ?>"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="tooltip__body">
+                                                <div class="tooltip__title">
+                                                    <svg class="svg-icon icon-cup">
+                                                        <use xlink:href="#icon-cup"></use>
+                                                    </svg>
+                                                    Ingredients of <?php echo $drinks[$friendDrink['drinkId'] - 1]['name']; ?>
+                                                </div>
+                                                <div class="tooltip__content">
+                                                    <?php 
+                                                    $counter = 0;
+                                                    foreach ($drinks[$friendDrink['drinkId'] - 1]['ingredients'] as $ingredient): 
+                                                    ?>
+                                                        <div class="sausage sausage--flex sausage--dot-sm">
+                                                            <i class="dot dot--sm dot--<?php echo $counter%2 ? 'blue' : 'red'; ?>"></i>
+                                                            <?php echo $ingredient; ?>
+                                                        </div>
+                                                    <?php 
+                                                    $counter++;
+                                                    endforeach; 
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                     <div class="friend-drink__values">
-                                        <div class="sausage sausage--sm sausage--red sausage--dot">
+                                        <div class="sausage sausage--red sausage--dot-sm">
                                             <i class="dot dot--sm"></i>
 
-                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['price'] ;?>
+                                            <?php echo '$ ' . $drinks[$friendDrink['drinkId'] - 1]['dollars'] ;?>
 
                                         </div>
-                                        <div class="sausage sausage--sm sausage--blue sausage--dot">
+                                        <div class="sausage sausage--blue sausage--dot-sm">
                                             <i class="dot dot--sm"></i>
                             
                                             <?php echo 'Cal ' . $drinks[$friendDrink['drinkId'] - 1]['calories'] ;?>
@@ -131,11 +142,244 @@
                     </div>
                 </div>
             </section>
-            <div class="text-center text-white">
-                <div class="text-center">
-                    <h2 class="title">Expert opinion</h2>
-                    <p>Bean Poet is a website that helps people make and enjoy better coffee. The world of coffee, specialty coffee in particular, can be intimidating to newcomers. You won’t find any coffee snobs at Bean Poet—but if you want to become one, it isn’t a bad place to start.</p>
+
+            <section class="section section--white">
+                <h3 class="text-center heading-decorated"><span>Total. All seasons</span></h3>
+                <!-- total seasons desktop -->
+                <div class="f-table total-seasons total-seasons--desktop">
+                            <!-- head -->
+                    <div class="f-table__row f-table__row--head">
+                        <div class="f-table__td">Title</div>
+
+                        <?php foreach($friends as $friend): ?>
+                            <div class="f-table__td">
+                                <div class="avatar avatar--sm">
+                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
+                                </div>
+                                <?php echo $friend['name'] ;?>
+                            </div>
+                        <?php endforeach; ?>
+
+                        <div class="f-table__td">Total per seasons</div>
+                    </div>
+                            <!-- rows -->
+                    <?php foreach($totalTypes as $type): ?>
+                        
+                        <div class="f-table__row sausage sausage--<?php echo $type['color']; ?> sausage--md">
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm sausage--flex">
+                                    <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
+                                    Total <?php echo $type['type']; ?>
+                                </div>
+                            </div>
+                            <?php
+                                $total = 0; 
+                                foreach($friends as $friend): 
+                            ?>
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm">
+                                <?php
+                                    $prefix = '';
+                                    if($type['type'] == 'dollars') $prefix = '$ ';
+                                    if($type['type'] == 'drinks') {
+                                        $total += array_sum($friend['seasonsDrinks']);
+                                        echo array_sum($friend['seasonsDrinks']) ;
+                                    }else{
+                                        $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                        echo $prefix . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                    }
+                                ?>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+                            <div class="f-table__td">
+                                <div class="sausage sausage--sm">
+                                    <?php echo $total; ?>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php endforeach; ?>
+
                 </div>
+
+                                <!-- total seasons mobile -->
+                <div class="total-seasons total-seasons--mobile js-acrd-sns-container">
+                    <?php 
+                        $counter = 0;
+                        foreach($totalTypes as $type): 
+                    ?>
+                        <div class="total-seasons__block">
+                            <div class="sausage sausage--md sausage--dot-md <?php echo 'sausage--' . $type['color'] ?> js-acrd-sns-trigger accordion__trigger" data-trigger="<?php echo $counter+1; ?>">
+                                <i class="dot dot--md"></i>
+
+                                <div class="name">Total <?php echo $type['type'] ?></div>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="total-seasons__mob-list js-acrd-sns-target accordion__target">
+                                <?php 
+                                    $total = 0;
+                                    foreach($friends as $friend): 
+                                ?>
+
+                                    <div class="total-seasons__mob-list-item">
+                                        <div class="avatar avatar--mob-md">
+                                            <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
+                                        </div>
+                                        <span class="name name--mob-list"><?php echo $friend['name'] ;?></span>
+                                        <div class="sausage <?php echo 'sausage--' . $type['color'] ?>">
+                                            <?php
+                                                $prefix = '';
+                                                if($type['type'] == 'dollars') $prefix = '$ ';
+                                                if($type['type'] == 'drinks') {
+                                                    $total += array_sum($friend['seasonsDrinks']);
+                                                    echo array_sum($friend['seasonsDrinks']) ;
+                                                }else{
+                                                    $total += array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                                    echo $prefix . array_sum($friend['seasonsDrinks']) * $drinks[$friend['drinkId'] - 1][$type['type']];
+                                                }
+                                            ?>
+                                        </div>
+                                    </div>
+
+                                <?php endforeach; ?>
+
+                                <div class="total-seasons__mob-list-item">
+                                    <span class="name name--mob-list">Total per seasons</span>
+                                    <div class="sausage <?php echo 'sausage--' . $type['color'] ?>"><?php echo $total ;?></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    <?php 
+                        $counter++;
+                        endforeach; 
+                    ?>
+                </div>
+
+                <h3 class="text-center heading-decorated"><span>Information per each character</span></h3>
+                        <!-- info per each character desktop -->
+                <div class="info-character-section--desktop">
+                    <?php foreach ($friends as $friend): ?>
+                        <div class="f-table info-character info-character--desktop">
+                                    <!-- head -->
+                            <div class="f-table__row f-table__row--head-lg sausage sausage--red">
+                                <div class="f-table__td">
+                                    <div class="avatar avatar--sm">
+                                        <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
+                                    </div>
+                                    <?php echo $friend['name'] ;?>
+                                </div>
+
+                                <?php
+                                    $season = 1; 
+                                    while($season <= count($friend['seasonsDrinks'])): 
+                                ?>
+                                    <div class="f-table__td">
+                                        Season <?php echo $season ;?>
+                                    </div>
+                                <?php 
+                                    $season++;
+                                    endwhile; 
+                                ?>
+
+                                <div class="f-table__td">All seasons</div>
+                            </div>
+                                    <!-- rows -->
+                            <?php foreach($totalTypes as $type): ?>
+                                
+                                <div class="f-table__row sausage sausage--gray sausage--md">
+                                    <div class="f-table__td">
+                                        <div class="sausage sausage--sm sausage--flex">
+                                            <i class="dot dot--md dot--<?php echo $type['color']; ?>"></i>
+                                            <?php
+                                                $text = '';
+                                                if($type['type'] == 'drinks') $text = 'Number of Drinks';
+                                                if($type['type'] == 'dollars') $text = 'Price of drink';
+                                                if($type['type'] == 'calories') $text = 'Calories in drink';
+                                                echo $text; 
+                                            ?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                        $total = 0;
+                                        $seasons = count($friend['seasonsDrinks']);
+                                        for($season = 1; $season <= $seasons; $season++): 
+                                    ?>
+                                    <div class="f-table__td">
+                                        <div class="sausage sausage--sm">
+                                        <?php
+                                            $prefix = '';
+                                            $drinksCount = $friend['seasonsDrinks'][$season - 1];
+                                            if($type['type'] == 'dollars') $prefix = '$ ';
+                                            if($type['type'] == 'drinks') {
+                                                $total += $drinksCount;
+                                                echo $drinksCount;
+                                            } else {
+                                                $drinkProp = $drinks[$friend['drinkId'] - 1][$type['type']] * $drinksCount;
+                                                $total += $drinkProp;
+                                                echo $prefix . $drinkProp;
+                                            }
+                                        ?>
+                                        </div>
+                                    </div>
+                                        <?php endfor; ?>
+                                    <div class="f-table__td">
+                                        <div class="sausage sausage--sm sausage--<?php echo $type['color']; ?>">
+                                            <?php echo $total; ?>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php endforeach; ?>
+
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                        <!-- info per each character mobile -->
+                <div class="info-character-section--mobile">
+                    <?php 
+                        $counter = 0;
+                        foreach ($friends as $friend): 
+                    ?>
+                        <div class="info-character info-character--mobile">
+                                    <!-- head -->
+                            <div class="sausage sausage--<?php echo getColor($counter); ?>">
+                                <div class="avatar avatar--sm">
+                                    <img src="images/avatars/<?php echo $friend['name'] ;?>.png" alt="<?php echo $friend['name'] ;?>">
+                                </div>
+                                <div class="name">
+                                    <?php 
+                                        echo $friend['name'] . $counter ;
+                                    ?>
+                                </div>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+
+                            <?php
+                                $season = 1; 
+                                while($season <= count($friend['seasonsDrinks'])): 
+                            ?>
+                                <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?>">
+                                        Season <?php echo $season ;?>
+                                </div>
+                            <?php 
+                                $season++;
+                                endwhile; 
+                            ?>
+                        </div>
+                    <?php
+                        $counter++; 
+                        endforeach; 
+                    ?>
+                </div>
+            </section>
+            <div class="text-wrap text-center text-white">
+                <h2 class="title">Expert opinion</h2>
+                <p>Bean Poet is a website that helps people make and enjoy better coffee. The world of coffee, specialty coffee in particular, can be intimidating to newcomers. You won’t find any coffee snobs at Bean Poet—but if you want to become one, it isn’t a bad place to start.</p>
             </div>
             <section class="section">
                 <div class="comments-block">
@@ -146,177 +390,180 @@
                             </div>
                             <div class="comments-block__wrap">
                                 <span class="comments-block__text">Expert:</span>
-                                <h3 class="comments-block__name">Erik Rolfsen</h3>
-                                <span class="comments-block__button">Editor of  <span class="comments-block__text-decoration">Bean Poet</span></span>
+                                <h3 class="comments-block__heading">Erik Rolfsen</h3>
+                                <span class="comments-block__label">Editor of  <span class="comments-block__text-decoration">Bean Poet</span></span>
                             </div>
                             <img class="comments-block__image" src="images/icons/pen.svg" alt="Pen">
                         </div>
                     </div>
-                    <div class="comments-swiper swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="comments-swiper__wrapper swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Monica.png" alt="Monica">
+                    <div class="comments-block__holder">
+                        <h3 class="comments-block__heading text-center hidden-mob">His comments</h3>
+                        <div class="comments-swiper swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="comments-swiper__wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Monica.png" alt="Monica">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Monica 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-brunette"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Decaf Cappuccino
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Monica 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-brunette"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Decaf Cappuccino
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
+                                        <p class="comment__text">If anyone needs to stick to decaf, it's Monica. She's pretty high-strung, and it almost frightens me to think how high her stress levels would hit if it were also powered by caffeine.</p>
+                                        <p class="comment__text">IStill, she's a good friend and if you ever needed somebody to talk to over a warm, frothy beverage, she'd be there for you.</p>
                                     </div>
-                                    <p>If anyone needs to stick to decaf, it's Monica. She's pretty high-strung, and it almost frightens me to think how high her stress levels would hit if it were also powered by caffeine.</p>
-                                    <p>Still, she's a good friend and if you ever needed somebody to talk to over a warm, frothy beverage, she'd be there for you.</p>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Rachel.png" alt="Rachel">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Rachel 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-blonde"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Decaf Cappuccino
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IAs the fashionista of the group, Rachel is probably the most discerning about the quality of her coffee. I have no doubt she'd prefer caffeine but chooses decaf for misguided health reasons. </p>
+                                        <p class="comment__text">IIt's the '90s, so the health benefits of caffeine aren't yet widely known. I could see Rachel making the switch to caffeinated at some point. She's not a morning person.</p>
+                                    </div>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Phoebe.png" alt="Phoebe">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Phoebe 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-blonde"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Decaf Cappuccino
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IPhoebe's no coffee snob. I don't think she cares much about the origin of her beans, the degree of the roast, or Gunther putting just the right tamp on her espresso. </p>
+                                        <p class="comment__text">IShe's easygoing enough to take whatever you serve her, but I'm sure she'd pick the highest quality coffee in a blind taste test, just by accident.</p>
+                                    </div>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Chandler.png" alt="Chandler">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Chandler 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-man"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Coffee black
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-coffee"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IBlack coffee suits Chandler. He might be the least pretentious of the Friends characters, so it makes sense that his drink is no frills as well.</p>
+                                        <p class="comment__text">IThe caffeine won't help him with his nerves around women, but it will help him focus on his work as a data analyst. And Chandler is frugal—he's not going to drop any more cash than necessary on his morning joe.</p>
+                                    </div>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Ross.png" alt="Ross">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Ross 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-man"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Ice tea
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-tea"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IRoss once mocked Chandler for drinking chocolate milk at age 29, so it's ironic that his go-to order is another child's drink. It's also a shame, because he'd make a great coffee geek. </p>
+                                        <p class="comment__text">ICoffee brewing is science. Give Ross a home espresso machine and he'd spend hours tweaking variables to get just the right extraction.</p>
+                                    </div>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Joey.png" alt="Joey">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Joey 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-man"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Latte
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-latte"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IItalians don't put milk in their coffee after noon, so Joey's all-hours embrace of the caffe latte tells us he's more new country than old. </p>
+                                        <p class="comment__text">IThe high milk content in a latte means it contains more protein and more fat than almost any other coffee drink, and since Joey is an eating machine, perhaps the latte is just his way of holding off the hunger until his next meal.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Rachel.png" alt="Rachel">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Rachel 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-blonde"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Decaf Cappuccino
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>As the fashionista of the group, Rachel is probably the most discerning about the quality of her coffee. I have no doubt she'd prefer caffeine but chooses decaf for misguided health reasons. </p>
-                                    <p>It's the '90s, so the health benefits of caffeine aren't yet widely known. I could see Rachel making the switch to caffeinated at some point. She's not a morning person.</p>
-                                </div>
-                            </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Phoebe.png" alt="Phoebe">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Phoebe 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-blonde"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Decaf Cappuccino
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>Phoebe's no coffee snob. I don't think she cares much about the origin of her beans, the degree of the roast, or Gunther putting just the right tamp on her espresso. </p>
-                                    <p>She's easygoing enough to take whatever you serve her, but I'm sure she'd pick the highest quality coffee in a blind taste test, just by accident.</p>
-                                </div>
-                            </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Chandler.png" alt="Chandler">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Chandler 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-man"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Coffee black
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-coffee"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>Black coffee suits Chandler. He might be the least pretentious of the Friends characters, so it makes sense that his drink is no frills as well.</p>
-                                    <p>The caffeine won't help him with his nerves around women, but it will help him focus on his work as a data analyst. And Chandler is frugal—he's not going to drop any more cash than necessary on his morning joe.</p>
-                                </div>
-                            </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Ross.png" alt="Ross">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Ross 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-man"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Ice tea
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-tea"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>Ross once mocked Chandler for drinking chocolate milk at age 29, so it's ironic that his go-to order is another child's drink. It's also a shame, because he'd make a great coffee geek. </p>
-                                    <p>Coffee brewing is science. Give Ross a home espresso machine and he'd spend hours tweaking variables to get just the right extraction.</p>
-                                </div>
-                            </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Joey.png" alt="Joey">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Joey 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-man"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Latte
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-latte"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>Italians don't put milk in their coffee after noon, so Joey's all-hours embrace of the caffe latte tells us he's more new country than old. </p>
-                                    <p>The high milk content in a latte means it contains more protein and more fat than almost any other coffee drink, and since Joey is an eating machine, perhaps the latte is just his way of holding off the hunger until his next meal.</p>
-                                </div>
-                            </div>
+                            <div class="swiper-pagination"></div>
+                            
                         </div>
-                        <div class="swiper-pagination"></div>
-                        
                     </div>
                     <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </section>
-            <div class="text-center text-white">
+            <div class="text-wrap text-center text-white">
                 <h2 class="title">Share</h2>
-                <p>Let us know your favourite type of coffee and how many you have a week and We will tell you how many calories you're drinking</p>
+                <p class="lead-text">Let us know your favourite type of coffee and how many you have a week and We will tell you how many calories you're drinking</p>
             </div>
             <ul class="social-links social-links--large">
                 <li class="social-links__item">
@@ -324,13 +571,8 @@
                         class="social-links__link icon-facebook js-game-share-top-link" data-social-links="facebook"
                         target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-facebook"></i>
-                        <svg class="cup" width="53" height="53"
-                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                        <svg class="svg-icon cup">
+                            <use xlink:href="#icon-cup"></use>
                         </svg>
                     </a>
                 </li>
@@ -339,13 +581,8 @@
                         class="social-links__link icon-twitter js-game-share-top-link" data-social-links="twitter"
                         target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-twitter"></i>
-                        <svg class="cup" width="53" height="53"
-                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                        <svg class="svg-icon cup">
+                            <use xlink:href="#icon-cup"></use>
                         </svg>
                     </a>
                 </li>
@@ -353,13 +590,8 @@
                     <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
                     <span class="social-links__link js-copy-share-text-btn">
                         <i class="fa fa-link"></i>
-                        <svg class="cup" width="53" height="53"
-                             viewBox="7 -6 53 53" style="enable-background:new 7 -6 53 53;" xml:space="preserve">
-                            <path  fill="white" class="st0" d="M52.4,15.3c-0.9,0-1.9,0.1-2.9,0.4v-2.1c0-1-0.8-1.7-1.7-1.7h-1.7V11c0-5.4-3-10.3-7.8-12.7
-                            c-1.1-0.6-2.5,0.3-2.5,1.5c0,2.9-2.3,5.2-5.2,5.2H19.1c-4.2,0-7.6,3-8.4,6.9H8.7c-1,0-1.7,0.8-1.7,1.7v3.1c0,8.6,2.5,15.2,8.5,22.9
-                            c1.7,2.1,4.2,3.4,6.8,3.4h11.9c2.7,0,5.2-1.2,6.8-3.4c1-1.3,1.9-2.5,2.7-3.7c0.6,0.1,1.2,0.2,1.8,0.2c5.5,0,11.5-4.3,13.7-9.7
-                            C61.6,20.5,58.5,15.3,52.4,15.3z M42.6,11.9H14.2c0.7-2,2.6-3.4,4.9-3.4h11.5c3.8,0,7-2.4,8.1-5.8c2.5,2,3.9,5,3.9,8.3L42.6,11.9z
-                             M56,25c-1.6,4-6.3,7.5-10.3,7.5c2.3-4.2,3.4-8.4,3.7-13.2c1-0.4,2.1-0.6,3-0.6C56.1,18.8,57.4,21.6,56,25z"/>
+                        <svg class="svg-icon cup">
+                            <use xlink:href="#icon-cup"></use>
                         </svg>
                     </span>
                 </li>

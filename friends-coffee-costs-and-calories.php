@@ -463,11 +463,9 @@
                     ?>
                 </div>
             </section>
-            <div class="text-center text-white">
-                <div class="text-center">
-                    <h2 class="title">Expert opinion</h2>
-                    <p>Bean Poet is a website that helps people make and enjoy better coffee. The world of coffee, specialty coffee in particular, can be intimidating to newcomers. You won’t find any coffee snobs at Bean Poet—but if you want to become one, it isn’t a bad place to start.</p>
-                </div>
+            <div class="text-wrap text-center text-white">
+                <h2 class="title">Expert opinion</h2>
+                <p>Bean Poet is a website that helps people make and enjoy better coffee. The world of coffee, specialty coffee in particular, can be intimidating to newcomers. You won’t find any coffee snobs at Bean Poet—but if you want to become one, it isn’t a bad place to start.</p>
             </div>
             <section class="section">
                 <div class="comments-block">
@@ -478,177 +476,180 @@
                             </div>
                             <div class="comments-block__wrap">
                                 <span class="comments-block__text">Expert:</span>
-                                <h3 class="comments-block__name">Erik Rolfsen</h3>
-                                <span class="comments-block__button">Editor of  <span class="comments-block__text-decoration">Bean Poet</span></span>
+                                <h3 class="comments-block__heading">Erik Rolfsen</h3>
+                                <span class="comments-block__label">Editor of  <span class="comments-block__text-decoration">Bean Poet</span></span>
                             </div>
                             <img class="comments-block__image" src="images/icons/pen.svg" alt="Pen">
                         </div>
                     </div>
-                    <div class="comments-swiper swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="comments-swiper__wrapper swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Monica.png" alt="Monica">
+                    <div class="comments-block__holder">
+                        <h3 class="comments-block__heading text-center hidden-mob">His comments</h3>
+                        <div class="comments-swiper swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="comments-swiper__wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Monica.png" alt="Monica">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Monica 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-brunette"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Decaf Cappuccino
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Monica 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-brunette"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Decaf Cappuccino
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
+                                        <p class="comment__text">If anyone needs to stick to decaf, it's Monica. She's pretty high-strung, and it almost frightens me to think how high her stress levels would hit if it were also powered by caffeine.</p>
+                                        <p class="comment__text">IStill, she's a good friend and if you ever needed somebody to talk to over a warm, frothy beverage, she'd be there for you.</p>
                                     </div>
-                                    <p>If anyone needs to stick to decaf, it's Monica. She's pretty high-strung, and it almost frightens me to think how high her stress levels would hit if it were also powered by caffeine.</p>
-                                    <p>Still, she's a good friend and if you ever needed somebody to talk to over a warm, frothy beverage, she'd be there for you.</p>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Rachel.png" alt="Rachel">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Rachel 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-blonde"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Decaf Cappuccino
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IAs the fashionista of the group, Rachel is probably the most discerning about the quality of her coffee. I have no doubt she'd prefer caffeine but chooses decaf for misguided health reasons. </p>
+                                        <p class="comment__text">IIt's the '90s, so the health benefits of caffeine aren't yet widely known. I could see Rachel making the switch to caffeinated at some point. She's not a morning person.</p>
+                                    </div>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Phoebe.png" alt="Phoebe">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Phoebe 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-blonde"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Decaf Cappuccino
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IPhoebe's no coffee snob. I don't think she cares much about the origin of her beans, the degree of the roast, or Gunther putting just the right tamp on her espresso. </p>
+                                        <p class="comment__text">IShe's easygoing enough to take whatever you serve her, but I'm sure she'd pick the highest quality coffee in a blind taste test, just by accident.</p>
+                                    </div>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Chandler.png" alt="Chandler">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Chandler 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-man"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Coffee black
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-coffee"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IBlack coffee suits Chandler. He might be the least pretentious of the Friends characters, so it makes sense that his drink is no frills as well.</p>
+                                        <p class="comment__text">IThe caffeine won't help him with his nerves around women, but it will help him focus on his work as a data analyst. And Chandler is frugal—he's not going to drop any more cash than necessary on his morning joe.</p>
+                                    </div>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Ross.png" alt="Ross">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Ross 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-man"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Ice tea
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-tea"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IRoss once mocked Chandler for drinking chocolate milk at age 29, so it's ironic that his go-to order is another child's drink. It's also a shame, because he'd make a great coffee geek. </p>
+                                        <p class="comment__text">ICoffee brewing is science. Give Ross a home espresso machine and he'd spend hours tweaking variables to get just the right extraction.</p>
+                                    </div>
+                                </div>
+                                <div class="comments-swiper__slide swiper-slide">
+                                    <div class="comment">
+                                        <div class="comment__head">
+                                            <div class="avatar">
+                                                <img src="images/avatars/Joey.png" alt="Joey">
+                                            </div>
+                                            <div class="comment__wrap">
+                                                <span class="comment__name">
+                                                    Joey 
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="#icon-man"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="comment__drink">
+                                                    Latte
+                                                    <svg class="svg-icon">
+                                                        <use x="0" y="0" xlink:href="#icon-latte"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p class="comment__text">IItalians don't put milk in their coffee after noon, so Joey's all-hours embrace of the caffe latte tells us he's more new country than old. </p>
+                                        <p class="comment__text">IThe high milk content in a latte means it contains more protein and more fat than almost any other coffee drink, and since Joey is an eating machine, perhaps the latte is just his way of holding off the hunger until his next meal.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Rachel.png" alt="Rachel">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Rachel 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-blonde"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Decaf Cappuccino
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>As the fashionista of the group, Rachel is probably the most discerning about the quality of her coffee. I have no doubt she'd prefer caffeine but chooses decaf for misguided health reasons. </p>
-                                    <p>It's the '90s, so the health benefits of caffeine aren't yet widely known. I could see Rachel making the switch to caffeinated at some point. She's not a morning person.</p>
-                                </div>
-                            </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Phoebe.png" alt="Phoebe">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Phoebe 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-blonde"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Decaf Cappuccino
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-cappuccino"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>Phoebe's no coffee snob. I don't think she cares much about the origin of her beans, the degree of the roast, or Gunther putting just the right tamp on her espresso. </p>
-                                    <p>She's easygoing enough to take whatever you serve her, but I'm sure she'd pick the highest quality coffee in a blind taste test, just by accident.</p>
-                                </div>
-                            </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Chandler.png" alt="Chandler">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Chandler 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-man"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Coffee black
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-coffee"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>Black coffee suits Chandler. He might be the least pretentious of the Friends characters, so it makes sense that his drink is no frills as well.</p>
-                                    <p>The caffeine won't help him with his nerves around women, but it will help him focus on his work as a data analyst. And Chandler is frugal—he's not going to drop any more cash than necessary on his morning joe.</p>
-                                </div>
-                            </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Ross.png" alt="Ross">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Ross 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-man"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Ice tea
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-tea"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>Ross once mocked Chandler for drinking chocolate milk at age 29, so it's ironic that his go-to order is another child's drink. It's also a shame, because he'd make a great coffee geek. </p>
-                                    <p>Coffee brewing is science. Give Ross a home espresso machine and he'd spend hours tweaking variables to get just the right extraction.</p>
-                                </div>
-                            </div>
-                            <div class="comments-swiper__slide swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__head">
-                                        <div class="avatar">
-                                            <img src="images/avatars/Joey.png" alt="Joey">
-                                        </div>
-                                        <div class="comment__wrap">
-                                            <span class="comment__name">
-                                                Joey 
-                                                <svg class="svg-icon">
-                                                    <use xlink:href="#icon-man"></use>
-                                                </svg>
-                                            </span>
-                                            <span class="comment__drink">
-                                                Latte
-                                                <svg class="svg-icon">
-                                                    <use x="0" y="0" xlink:href="#icon-latte"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <p>Italians don't put milk in their coffee after noon, so Joey's all-hours embrace of the caffe latte tells us he's more new country than old. </p>
-                                    <p>The high milk content in a latte means it contains more protein and more fat than almost any other coffee drink, and since Joey is an eating machine, perhaps the latte is just his way of holding off the hunger until his next meal.</p>
-                                </div>
-                            </div>
+                            <div class="swiper-pagination"></div>
+                            
                         </div>
-                        <div class="swiper-pagination"></div>
-                        
                     </div>
                     <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </section>
-            <div class="text-center text-white">
+            <div class="text-wrap text-center text-white">
                 <h2 class="title">Share</h2>
-                <p>Let us know your favourite type of coffee and how many you have a week and We will tell you how many calories you're drinking</p>
+                <p class="lead-text">Let us know your favourite type of coffee and how many you have a week and We will tell you how many calories you're drinking</p>
             </div>
             <ul class="social-links social-links--large">
                 <li class="social-links__item">

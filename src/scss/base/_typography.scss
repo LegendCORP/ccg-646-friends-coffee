@@ -76,13 +76,16 @@ p {
 a {
   color: $base-link-color;
   transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out,
-    border-color 0.3s ease-in-out;
+  border-color 0.3s ease-in-out;
   font-family: inherit;
 
-  &:hover,
-  &:focus {
+  &:hover{
     text-decoration: none;
     color: $base-link-color;
+  }
+  
+  &:focus {
+    outline: none;
   }
 }
 
