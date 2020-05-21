@@ -51,6 +51,28 @@
                         </span>
                     </li>
                 </ul>
+                <ul class="social-links social-links--left">
+                    <li class="social-links__item">
+                        <a href="//www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.cardschat.com%2FFriends-coffee-costs-and-calories&quote=The%20Friends%20characters%20spent%20most%20of%20their%20time%20at%20Central%20Perk%2C%20but%20how%20many%20coffees%20did%20they%20really%20drink%2C%20how%20much%20would%20this%20have%20cost%20them%20and%20how%20many%20calories%20would%20they%20have%20consumed%3F%20Check%20out%20the%20results%20for%20yourself%2C%20but%20Oh.%20My.%20God…%20https%3A%2F%2Fwww.cardschat.com%2FFriends-coffee-costs-and-calories%2F"
+                            class="social-links__link icon-facebook js-game-share-top-link" data-social-links="facebook"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="https://twitter.com/intent/tweet?text=The%20Friends%20characters%20spent%20most%20of%20their%20time%20at%20Central%20Perk%2C%20but%20how%20many%20coffees%20did%20they%20really%20drink%2C%20how%20much%20would%20this%20have%20cost%20them%20and%20how%20many%20calories%20would%20they%20have%20consumed%3F☕️Check%20out%20the%20results%20for%20yourself%2C%20but%20Oh.%20My.%20God…%20www.cardschat.com/Friends-coffee-costs-and-calories/  The%20Friends%20characters%20spent%20most%20of%20their%20time%20at%20Central%20Perk%2C%20but%20how%20many%20coffees%20did%20they%20really%20drink%2C%20how%20much%20would%20this%20have%20cost%20them%20and%20how%20many%20calories%20would%20they%20have%20consumed%3F%20Check%20out%20the%20results%20for%20yourself%2C%20but%20Oh.%20My.%20God…%20https%3A%2F%2Fwww.cardschat.com%2FFriends-coffee-costs-and-calories%2F"
+                            class="social-links__link icon-twitter js-game-share-top-link" data-social-links="twitter"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <input class="social-links__input js-copy-share-text-input" readonly type="text" value="<iframe src='https://www.cardschat.com/Friends-coffee-costs-and-calories/' width='100%' height='600' style='display:table; max-width:880px; margin:auto; width:800px;' frameBorder='0' scrolling='yes'></iframe>">
+                        <span class="social-links__link js-copy-share-text-btn">
+                            <i class="fa fa-link"></i>
+                        </span>
+                    </li>
+                </ul>
             </div>
         </header>
         <section class="container">

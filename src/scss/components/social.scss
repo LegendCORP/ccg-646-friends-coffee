@@ -4,6 +4,7 @@ $link-size-mob: 40px;
 .social-links {
   display: none;
   position: relative;
+  z-index: 3;
 
   @include media(">=tablet") {
     display: flex;
@@ -28,6 +29,16 @@ $link-size-mob: 40px;
     @include media('>=tablet') {
       margin-top: -16px;
     }
+  }
+  
+  &--left {
+    @include media('>=desktop') {
+      position: fixed;
+      top: 300px;
+      left: 50px;
+      display: block;
+    }
+    
   }
 
   &__drop-item {
@@ -92,10 +103,19 @@ $link-size-mob: 40px;
   }
 
   &__item {
-    margin: 0 5px;
+    margin: 0 0 10px;
+    
+    .social-links--header & {
+      margin: 0 3px;
+      
+      @include media('>=tablet') {
+        margin: 0 5px;
+      }
+    }
 
     .social-links--large & {
       margin: 0 16px;
+      
       @include media('>=tablet') {
         margin: 0 30px;
       }
@@ -111,7 +131,7 @@ $link-size-mob: 40px;
     height: $link-size-mob;
     border: 1px solid $white;
     border-radius: $link-size / 2;
-    background-color: $white;
+    background-color: $bg-blue;
     position: relative;
     cursor: pointer;
     @include animate(width background-color color);
@@ -119,6 +139,14 @@ $link-size-mob: 40px;
     @include media(">=desktop") {
       width: $link-size;
       height: $link-size;
+    }
+    
+    &:hover {
+      .social-links--left & {
+        @include media('>=desktop') {
+          background-color:rgba($white,0.2);
+        }
+      }
     }
 
     .social-links--header & {
