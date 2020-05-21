@@ -6,8 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: -17px;
-    margin-right: -17px;
+    margin: -22px -17px 0;
   }
 }
 
@@ -38,6 +37,7 @@
     max-width: 337px;
     margin-left: 17px;
     margin-right: 17px;
+    margin-top: 30px;
   }
 
   &__info {
