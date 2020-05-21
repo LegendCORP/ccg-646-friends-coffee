@@ -322,7 +322,7 @@
   @include media(">=tablet") {
     display: none;
   }
-
+  
   &.swiper-button-disabled {
     opacity: 1;
   }

@@ -116,9 +116,6 @@
     }
   }
 
-  &__trigger {
-  }
-
   &__body {
     position: absolute;
     opacity: 0;
@@ -238,3 +235,40 @@
   line-height: 20px;
   color: $color-text-violet;
 }
+
+.section {
+  position: relative;
+}
+
+.decor {
+  display: none;
+  
+  @include media('>=desktop') {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  &__coffee {
+    @include media('>=desktop') {
+      top: 100px;
+      right: -400px;
+    }
+  }
+  
+  &__coffee-beans-small {
+    @include media('>=desktop') {
+      bottom: 100px;
+      right: -60px;
+      z-index: 0;
+    }
+  }
+  
+  &__coffee-beans {
+    @include media('>=desktop') {
+      top: 0;
+      right: -400px;
+    }
+  }
+}
+
