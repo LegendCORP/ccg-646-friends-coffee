@@ -9,10 +9,6 @@ $link-size-mob: 40px;
     display: flex;
   }
 
-  @include media("<desktop") {
-    padding-right: 50px;
-  }
-
   &--header {
     display: flex;
     padding-right: 0;
@@ -26,7 +22,12 @@ $link-size-mob: 40px;
   }
 
   &--large {
+    display: flex;
     justify-content: center;
+
+    @include media('>=tablet') {
+      margin-top: -16px;
+    }
   }
 
   &__drop-item {
@@ -45,8 +46,7 @@ $link-size-mob: 40px;
     border-top-right-radius: ($link-size-mob - 2px)/2;
     border-bottom-right-radius: ($link-size-mob - 2px)/2;
     height: $link-size-mob - 2px;
-    line-height: $link-size-mob - 2px;
-    // font-family: $heading-font;
+    line-height: $link-size-mob - 2px; // font-family: $heading-font;
     font-size: 14px;
     flex-basis: 50px;
     cursor: pointer;
@@ -91,6 +91,17 @@ $link-size-mob: 40px;
     }
   }
 
+  &__item {
+    margin: 0 5px;
+
+    .social-links--large & {
+      margin: 0 16px;
+      @include media('>=tablet') {
+        margin: 0 30px;
+      }
+    }
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -98,7 +109,6 @@ $link-size-mob: 40px;
     color: $white;
     width: $link-size-mob;
     height: $link-size-mob;
-    margin: 0 5px;
     border: 1px solid $white;
     border-radius: $link-size / 2;
     background-color: $white;
@@ -132,7 +142,7 @@ $link-size-mob: 40px;
       @include media(">=tablet") {
         width: 110px;
         height: 110px;
-        font-size: 30px;
+        font-size: 34px;
         padding: 22px 20px 0 0;
       }
     }
@@ -205,8 +215,7 @@ $link-size-mob: 40px;
 
         .opener {
           background-color: $white;
-          width: 0;
-          //ff width fix
+          width: 0; //ff width fix
           max-width: 0;
           flex-basis: 0;
         }
