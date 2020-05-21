@@ -15,7 +15,7 @@
         <?php include "content.php"; ?>
 
         <div id="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container header__container">
                 <a href="/" class="header__logo-link">
                     <img class="header__logo-img" src="images/logo.svg" alt="CardsChat.com">
@@ -797,7 +797,7 @@
                 </div>
             </div>
         </footer>
-        <a href="#header" class="back-to-top-btn smooth-scroll"><i class="icon-arrow-down"></i></a>
+        <a href="#header" class="js-scroll-to-top smooth-scroll"><i class="icon-arrow-down"></i></a>
         </div>
         <script src="dist/js/pages/friends-coffee-costs-and-calories.js"></script> 
     </body>
