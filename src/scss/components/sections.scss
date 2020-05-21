@@ -4,11 +4,19 @@
       width: 87px;
     }
   }
+
+  .dot {
+    margin-right: 6px;
+
+    @include media(">=tablet") {
+      margin-right: 8px;
+    }
+  }
 }
 
 .total-seasons {
   &--mobile {
-    @include media(">=tablet-xl") {
+    @include media(">=desktop") {
       display: none;
     }
 
@@ -23,14 +31,66 @@
         flex-grow: 1;
       }
     }
+
+    .dot {
+      margin-right: 10px;
+    }
   }
 
   &--desktop {
     display: none;
 
-    @include media(">=tablet-xl") {
+    @include media(">=desktop") {
       display: block;
       margin-bottom: 30px;
+    }
+
+    .dot {
+      margin-right: 10px;
+    }
+
+    .f-table__row--head {
+      padding: 0 16px;
+
+      .f-table__td {
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: $color-text-gray;
+
+        &:first-child {
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-end;
+        }
+
+        &:last-child {
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+
+        .avatar {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .f-table__td {
+      max-width: 11%;
+      width: 100%;
+      white-space: nowrap;
+
+      &:first-child {
+        justify-content: flex-start;
+        max-width: 17%;
+      }
+
+      &:last-child {
+        justify-content: flex-end;
+        max-width: 14%;
+      }
     }
   }
 
@@ -158,6 +218,10 @@
       margin-bottom: 0;
     }
 
+    .dot {
+      margin-right: 10px;
+    }
+
     .f-table__row--head-lg {
       position: relative;
       padding: 27px 17px 23px 50px;
@@ -180,20 +244,6 @@
           max-width: 13%;
         }
       }
-
-      // .sausage--gray {
-      //   .f-table__td {
-      //     &:first-child {
-      //       justify-content: flex-start;
-      //       max-width: 16%;
-      //       width: 100%;
-      //     }
-
-      //     &:last-child {
-      //       justify-content: flex-end;
-      //       max-width: 10%;
-      //     }
-      //   }
     }
 
     .f-table__td {
