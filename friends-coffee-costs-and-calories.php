@@ -80,6 +80,12 @@
         </section>
         <div class="container">
             <section class="section section--white">
+                <div class="decor decor__coffee">
+                    <img src="images/coffee.svg" alt="Coffee">
+                </div>
+                <div class="decor decor__coffee-beans-small">
+                    <img src="images/coffee-beans-small.svg" alt="Coffee beans">
+                </div>
                 <div class="img-wrap img-wrap--lg-radius">
                     <img src="images/central-perk.png" alt="central perk">
                 </div>
@@ -166,6 +172,9 @@
             </section>
 
             <section class="section section--white">
+                <div class="decor decor__coffee-beans">
+                    <img src="images/coffee-beans.svg" alt="Coffee beans">
+                </div>
                 <h3 class="text-center heading-decorated"><span>Total. All seasons</span></h3>
                 <!-- total seasons desktop -->
                 <div class="f-table total-seasons total-seasons--desktop">
