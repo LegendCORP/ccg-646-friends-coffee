@@ -4,6 +4,8 @@ import { ReadMoreToggler } from "../components/read-more";
 import { OpenClose } from "../components/open-close";
 import { CopyShareText } from "../components/copy-share-text";
 import Swiper from "swiper";
+// import "swiper/css/swiper.css";
+
 import { AnimatedAccordion } from "../components/togglers";
 
 new ReadMoreToggler({
@@ -72,3 +74,21 @@ new AnimatedAccordion(
   ".js-acrd-sns-trigger",
   ".js-acrd-sns-target"
 ).init();
+
+new AnimatedAccordion(
+  ".js-acrd-mobchar-container",
+  ".js-acrd-mobchar-trigger",
+  ".js-acrd-mobchar-target"
+).init();
+
+const seasonsAccordions = [
+  ...document.querySelectorAll(".js-acrd-mob-sns-container"),
+];
+
+seasonsAccordions.map((seasonItem) => {
+  new AnimatedAccordion(
+    seasonItem,
+    ".js-acrd-mob-sns-trigger",
+    ".js-acrd-mob-sns-target"
+  ).init();
+});
