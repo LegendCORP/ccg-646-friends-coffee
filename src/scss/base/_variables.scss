@@ -35,7 +35,7 @@ $sorce-code-font: "Source Code Pro", "Times", "Baskerville", "Georgia", serif;
 // Body
 $base-text-color: $black !default;
 $base-background-color: $bg-blue !default;
-$font-size-base: 16px !default;
+$font-size-base: 1.6rem !default;
 $line-height-base: 1.7 !default;
 $base-font-family: $base-font !default;
 
@@ -63,12 +63,12 @@ $form-element-focus-border-color: $black !default;
 $placeholder-color: $black !default;
 
 // Headers
-$h1-font-size: rem(26px) !default;
-$h2-font-size: rem(28px) !default;
-$h3-font-size: rem(22px) !default;
-$h4-font-size: rem(20px) !default;
-$h5-font-size: rem(20px) !default;
-$h6-font-size: rem(16px) !default;
+$h1-font-size: 2.6rem !default;
+$h2-font-size: 2.8rem !default;
+$h3-font-size: 2.2rem !default;
+$h4-font-size: 2rem !default;
+$h5-font-size: 2rem !default;
+$h6-font-size: 1.6rem !default;
 
 $headings-font-family: $secondary-font !default;
 $headings-color: inherit !default;

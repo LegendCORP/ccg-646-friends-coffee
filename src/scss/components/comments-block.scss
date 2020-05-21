@@ -13,12 +13,12 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: normal;
   margin-bottom: 15px;
 
   @include media(">=tablet") {
-    font-size: 40px;
+    font-size: 4rem;
     margin-bottom: 8px;
   }
 }
@@ -30,23 +30,23 @@
 .text-wrap {
   margin-bottom: 42px;
   max-width: 720px;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 1.71;
   font-weight: 500;
 
   @include media(">=tablet") {
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 20px;
     margin: 0 auto 46px;
   }
 }
 
 .lead-text {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 2;
 
   @include media(">=tablet") {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.75;
   }
 }
@@ -56,7 +56,7 @@
 }
 
 .comments-block {
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1.77;
   color: $color-text-gray;
   border-radius: 15px;
@@ -74,12 +74,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: $color-text-gray;
 
     @include media(">=desktop") {
       padding: 38px 20px 37px;
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
 
@@ -108,13 +108,13 @@
   }
 
   &__heading {
-    font: 22px/1 $secondary-font;
+    font: 2.2rem/1 $secondary-font;
     color: $color-text-violet;
     margin: 0 40px 7px 0;
 
     @include media(">=desktop") {
       margin: 0 0 18px;
-      font-size: 24px;
+      font-size: 2.4rem;
     }
   }
 
@@ -129,7 +129,7 @@
 
   &__label {
     display: inline-block;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1.2;
     color: $white;
     background: #02b2e7;
@@ -139,7 +139,7 @@
     position: relative;
 
     @include media(">=desktop") {
-      font-size: 13px;
+      font-size: 1.3rem;
       padding: 7px 37px 6px 27px;
     }
 
@@ -243,7 +243,7 @@
     width: 48px;
     height: 48px;
 
-    @include media(">=tablet") {
+    @include media(">desktop") {
       width: 75px;
       height: 75px;
     }
@@ -258,7 +258,7 @@
   }
 
   &__name {
-    font-size: 16px;
+    font-size: 1.6rem;
     display: flex;
     margin: 0 0 -1px;
 
@@ -269,38 +269,46 @@
 
   .svg-icon {
     flex-shrink: 0;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     margin: 1px 0 0 9px;
 
     @include media(">=tablet") {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
 
   &__drink {
     display: flex;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.43;
     font-weight: bold;
     margin-right: -20px;
     color: $color-text-violet;
 
     @include media(">=tablet") {
-      font-size: 16px;
+      font-size: 1.6rem;
       margin: -5px -15px 0 0;
+    }
+    
+    @include media('>=desktop') {
+      font-size: 1.3rem;
+    }
+    
+    @include media('>=widescreen') {
+      font-size: 1.6rem;
     }
 
     .svg-icon {
-      width: 26px;
-      height: 26px;
-      margin: -6px 0 0 5px;
+      width: 20px;
+      height: 20px;
+      margin: -3px 0 0 5px;
 
       @include media(">=tablet") {
-        width: 30px;
-        height: 30px;
-        margin: -7px 0 0 5px;
+        width: 26px;
+        height: 26px;
+        margin: -5px 0 0 10px;
       }
     }
   }
@@ -340,7 +348,7 @@
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 

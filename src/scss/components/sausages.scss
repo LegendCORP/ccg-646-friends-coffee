@@ -45,12 +45,13 @@
 
   &--sm {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 1.2rem;
+    line-height: 1.67;
     padding: 4px 18px;
 
     @include media(">=tablet") {
-      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.54;
     }
   }
 
@@ -63,8 +64,8 @@
     padding-left: 10px;
     margin-right: 14px;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 1.2rem;
+    line-height: 1.67;
     display: flex;
     align-items: center;
 
@@ -73,20 +74,19 @@
       padding-bottom: 4px;
       padding-left: 14px;
       width: 78px;
-      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.54;
     }
   }
 
   &--dot-md {
     // padding-left: 45px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 1.25;
     display: flex;
     align-items: center;
 
-    @include media(">=tablet") {
-    }
   }
 
   &--flex {

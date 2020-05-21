@@ -800,7 +800,7 @@
                 </div>
             </div>
         </footer>
-        <a href="#header" class="js-scroll-to-top smooth-scroll"><i class="icon-arrow-down"></i></a>
+        <a href="#header" class="js-scroll-to-top smooth-scroll"><i class="fa fa-angle-down"></i></a>
         </div>
         <script src="dist/js/pages/friends-coffee-costs-and-calories.js"></script> 
     </body>
