@@ -70,9 +70,7 @@
     align-items: center;
 
     @include media(">=tablet") {
-      padding-top: 4px;
-      padding-bottom: 4px;
-      padding-left: 14px;
+      padding: 4px 14px;
       width: 78px;
       font-size: 1.3rem;
       line-height: 1.54;

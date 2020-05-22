@@ -433,6 +433,7 @@
 
   &__holder {
     position: absolute;
+    z-index: 3;
     background-color: $dark-blue;
     border: 1px solid transparent;
     border-radius: 3px;
@@ -480,7 +481,7 @@
 
 .js-scroll-to-top {
   position: fixed;
-  bottom: 306px;
+  bottom: 316px;
   right: 20px;
   width: 40px;
   height: 40px;
