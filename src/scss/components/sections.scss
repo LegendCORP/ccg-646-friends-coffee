@@ -16,12 +16,18 @@
 
 .total-seasons {
   &--mobile {
+    margin-bottom: 39px;
+    
     @include media(">=desktop") {
       display: none;
     }
+    
+    .total-seasons__block {
+      margin-bottom: 18px;
+    }
 
     .sausage--dot-md {
-      padding: 16px 24px;
+      padding: 15px 18px 13px 31px;
 
       &.active {
         margin-bottom: 10px;
@@ -34,6 +40,10 @@
 
     .dot {
       margin-right: 10px;
+    }
+    
+    .fa {
+      font-size: 2.5rem;
     }
   }
 
@@ -133,8 +143,9 @@
     justify-content: space-between;
     padding-left: 71px;
     padding-right: 17px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-top: 2px;
+    margin-left: 9px;
     position: relative;
     z-index: 10;
 
@@ -142,12 +153,18 @@
       flex-grow: 1;
       font-family: $secondary-font;
       font-size: 2.2rem;
+      text-align: center;
+      padding-right: 10px;
     }
 
     .avatar {
       position: absolute;
-      bottom: -5px;
-      left: -5px;
+      bottom: -1px;
+      left: -9px;
+    }
+    
+    .fa {
+      font-size: 2.5rem;
     }
   }
 
@@ -275,6 +292,7 @@
   }
 
   &--mobile {
+    margin-top: 54px;
     @include media(">=desktop") {
       display: none;
     }
