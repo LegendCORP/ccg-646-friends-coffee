@@ -33,7 +33,7 @@ $media-expressions: (
 @import "base/forms";
 @import "base/typography";
 @import "base/font-awesome";
-@import "base/swiper";
+@import "~swiper/css/swiper.css";
 
 @import "layout/common";
 @import "layout/header";

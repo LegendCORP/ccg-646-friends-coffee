@@ -22,10 +22,7 @@ module.exports = {
     filename: "js/[name].js",
   },
   optimization: {
-    minimizer:
-      ENV === "production"
-        ? [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})]
-        : [],
+    minimizer: ENV === "production" ? [] : [],
   },
   module: {
     rules: [
