@@ -2,6 +2,7 @@
   .sausage--blue {
     @include media(">=tablet") {
       width: 87px;
+      white-space: nowrap;
     }
   }
 
@@ -100,6 +101,12 @@
       &:last-child {
         justify-content: flex-end;
         max-width: 14%;
+
+        .sausage {
+          flex-grow: 1;
+          max-width: 108px;
+          text-align: center;
+        }
       }
     }
   }
@@ -251,7 +258,7 @@
       }
 
       .f-table__td {
-        font-weight: bold;
+        font-weight: 500;
         font-size: 1.2rem;
         line-height: 1.67;
         text-transform: uppercase;
@@ -272,6 +279,10 @@
         justify-content: flex-start;
         max-width: 17%;
         width: 100%;
+
+        .sausage {
+          box-shadow: 0px 4px 12px rgba(27, 31, 54, 0.05);
+        }
       }
 
       &:last-child {
