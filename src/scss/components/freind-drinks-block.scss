@@ -10,7 +10,7 @@
     margin-right: -17px;
   }
   
-  @include media('>=desktop') {
+  @include media('>=tablet') {
     margin-top: -22px;
   }
 }
