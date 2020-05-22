@@ -137,7 +137,7 @@
                                                     foreach ($drinks[$friendDrink['drinkId'] - 1]['ingredients'] as $ingredient): 
                                                     ?>
                                                         <div class="sausage sausage--flex sausage--dot-sm">
-                                                            <i class="dot dot--sm dot--<?php echo $counter%2 ? 'blue' : 'red'; ?>"></i>
+                                                            <i class="dot dot--md dot--<?php echo $counter%2 ? 'blue' : 'red'; ?>"></i>
                                                             <?php echo $ingredient; ?>
                                                         </div>
                                                     <?php 
@@ -685,7 +685,7 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </section>
-            <div class="text-wrap text-center text-white">
+            <div class="text-wrap text-wrap--share text-center text-white">
                 <h2 class="title">Share</h2>
                 <p class="lead-text">Let us know your favourite type of coffee and how many you have a week and We will tell you how many calories you're drinking</p>
             </div>

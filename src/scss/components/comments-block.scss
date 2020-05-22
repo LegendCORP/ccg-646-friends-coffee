@@ -39,6 +39,10 @@
     line-height: 20px;
     margin: 0 auto 46px;
   }
+
+  &--share {
+    max-width: 580px;
+  }
 }
 
 .lead-text {
@@ -291,12 +295,12 @@
       font-size: 1.6rem;
       margin: -5px -15px 0 0;
     }
-    
-    @include media('>=desktop') {
+
+    @include media(">=desktop") {
       font-size: 1.3rem;
     }
-    
-    @include media('>=widescreen') {
+
+    @include media(">=widescreen") {
       font-size: 1.6rem;
     }
 
@@ -330,7 +334,7 @@
   @include media(">=tablet") {
     display: none;
   }
-  
+
   &.swiper-button-disabled {
     opacity: 1;
   }
