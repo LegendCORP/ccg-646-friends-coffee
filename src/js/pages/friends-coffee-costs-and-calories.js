@@ -31,9 +31,9 @@ new ReadMoreToggler({
   triggerTextHolder: ".js-readmore-text-top",
 });
 
-const readMoreContainers = [
-  ...document.querySelectorAll(".js-read-more-container"),
-];
+const readMoreContainers = Array.prototype.slice.call(
+  document.querySelectorAll(".js-read-more-container")
+);
 
 readMoreContainers.map(
   (container) => new ReadMoreToggler(container, ".js-read-more-trigger")
@@ -47,26 +47,28 @@ function mySwiper() {
     let screenMobile = window.matchMedia("(max-width: 767px)").matches;
     let screenDesktop = window.matchMedia("(min-width: 768px)").matches;
     if (screenMobile && window.mainSwiper === undefined) {
-      [...document.querySelectorAll(".comments-block")].forEach((wrap) => {
-        var swiper = wrap.querySelector(".comments-swiper");
-        var nx = wrap.querySelector(".swiper-button-next");
-        var pr = wrap.querySelector(".swiper-button-prev");
+      Array.prototype.slice
+        .call(document.querySelectorAll(".comments-block"))
+        .forEach((wrap) => {
+          var swiper = wrap.querySelector(".comments-swiper");
+          var nx = wrap.querySelector(".swiper-button-next");
+          var pr = wrap.querySelector(".swiper-button-prev");
 
-        window.mainSwiper = new Swiper(swiper, {
-          autoHeight: false,
-          slidesPerView: 1,
-          spaceBetween: 20,
-          navigation: {
-            nextEl: nx,
-            prevEl: pr,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            type: "bullets",
-            clickable: true,
-          },
+          window.mainSwiper = new Swiper(swiper, {
+            autoHeight: false,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+              nextEl: nx,
+              prevEl: pr,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              type: "bullets",
+              clickable: true,
+            },
+          });
         });
-      });
     } else if (screenDesktop && window.mainSwiper !== undefined) {
       window.mainSwiper.destroy();
       window.mainSwiper = undefined;
@@ -83,7 +85,9 @@ mySwiper();
 new ScrollToggler(".js-scroll-to-top");
 new ScrollToggler(".js-scroll-socials");
 
-const embeds = [...document.querySelectorAll(".js-copy-input-text")];
+const embeds = Array.prototype.slice.call(
+  document.querySelectorAll(".js-copy-input-text")
+);
 embeds.map((embed) => {
   new EmbedCopy(embed);
 });
@@ -100,9 +104,9 @@ new AnimatedAccordion(
   ".js-acrd-mobchar-target"
 ).init();
 
-const seasonsAccordions = [
-  ...document.querySelectorAll(".js-acrd-mob-sns-container"),
-];
+const seasonsAccordions = Array.prototype.slice.call(
+  document.querySelectorAll(".js-acrd-mob-sns-container")
+);
 
 seasonsAccordions.map((seasonItem) => {
   new AnimatedAccordion(
