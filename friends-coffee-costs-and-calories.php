@@ -250,7 +250,7 @@
                                 <i class="dot dot--md"></i>
 
                                 <div class="name">Total <?php echo $type['type'] ?></div>
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </div>
 
                             <div class="total-seasons__mob-list border--<?php echo $type['color']; ?> js-acrd-sns-target accordion__target">
@@ -406,7 +406,7 @@
                                         echo $friend['name'];
                                     ?>
                                 </div>
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </div>
                             <div class="accordion__target js-acrd-mobchar-target">
                                 <div class="info-character__seasons js-acrd-mob-sns-container">
@@ -420,7 +420,7 @@
                                         <div class="info-character__season">
                                             <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?> js-acrd-mob-sns-trigger accordion__trigger" data-trigger="<?php echo $season; ?>">
                                                 Season <?php echo $season ;?>
-                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
                                             </div>
                                             <div class="js-acrd-mob-sns-target accordion__target">
                                                 <?php foreach($totalTypes as $type): ?>
@@ -462,7 +462,7 @@
                                      <div class="info-character__season">
                                         <div class="sausage sausage--border sausage--border-<?php echo getColor($counter); ?> js-acrd-mob-sns-trigger" data-trigger="<?php echo $season; ?>">
                                             All Seasons
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </div>
                                         <div class="js-acrd-mob-sns-target accordion__target">
                                             <?php foreach($totalTypes as $type): ?>
@@ -729,7 +729,7 @@
                         <a href="/" class="pre-footer__logo">
                             <img src="images/logo.svg" alt="CardsChat.com">
                         </a>
-                        <div class="pre-footer__copyrights"><span class="pre-footer__copyrights-date">Data collected in 2020.</span>&copy; $year Cardschat.com. All Rights Reserved</div>
+                        <div class="pre-footer__copyrights"><span class="pre-footer__copyrights-date">Data collected in 2020.</span>&copy; <?php echo date("Y"); ?> Cardschat.com. All Rights Reserved</div>
                     </div>
                     <div class="pre-footer__buttons">
                         <div class="dropdown open-close">
