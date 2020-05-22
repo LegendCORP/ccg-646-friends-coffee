@@ -405,7 +405,7 @@
     background-color: transparent;
     border: 1px solid $white;
     border-radius: 5px;
-    padding: 13px 18px 12px 20px;
+    padding: 16px 18px 16px 20px;
     font-size: 1.6rem;
     line-height: 1.1;
     color: $white;
@@ -414,7 +414,7 @@
     @include animate(background-color);
 
     @include media(">=tablet") {
-      padding: 11px 14px 10px 30px;
+      padding: 14px 14px 14px 30px;
     }
 
     &:after {
@@ -476,6 +476,14 @@
   .fa-angle-down {
     font-size: 2.3rem;
     line-height: 0.7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+    
+    @include media('>=tablet') {
+      right: 14px;
+    }
   }
 }
 

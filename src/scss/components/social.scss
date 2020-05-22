@@ -140,6 +140,7 @@ $link-size-mob: 40px;
     cursor: pointer;
     @include animate(width background-color color);
     font-size: 2rem;
+    text-decoration: none;
 
     @include media(">=desktop") {
       width: $link-size;

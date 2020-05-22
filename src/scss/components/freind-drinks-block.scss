@@ -6,7 +6,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: -22px -17px 0;
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  
+  @include media('>=tablet') {
+    margin-top: -22px;
   }
 }
 
