@@ -489,7 +489,7 @@
 
 .js-scroll-to-top {
   position: fixed;
-  bottom: 316px;
+  bottom: 20px;
   right: 20px;
   width: 40px;
   height: 40px;
@@ -506,15 +506,6 @@
   color: $white;
   cursor: pointer;
   @include animate(opacity visibility border-color background-color);
-
-  @include media(">=tablet") {
-    bottom: 20px;
-  }
-
-  @include media(">=tablet") {
-    right: 30px;
-    bottom: 30px;
-  }
 
   @include media(">=desktop") {
     right: 30px;
