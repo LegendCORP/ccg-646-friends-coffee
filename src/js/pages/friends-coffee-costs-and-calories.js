@@ -1,5 +1,15 @@
 console.log("friends");
 
+if ("NodeList" in window && !NodeList.prototype.forEach) {
+  console.info("polyfill for IE11");
+  NodeList.prototype.forEach = function (callback, thisArg) {
+    thisArg = thisArg || window;
+    for (var i = 0; i < this.length; i++) {
+      callback.call(thisArg, this[i], i, this);
+    }
+  };
+}
+
 import { ReadMoreToggler } from "../components/read-more";
 import { OpenClose } from "../components/open-close";
 import { CopyShareText, EmbedCopy } from "../components/copy-share-text";
@@ -21,9 +31,9 @@ new ReadMoreToggler({
   triggerTextHolder: ".js-readmore-text-top",
 });
 
-const readMoreContainers = Array.from(
-  document.querySelectorAll(".js-read-more-container")
-);
+const readMoreContainers = [
+  ...document.querySelectorAll(".js-read-more-container"),
+];
 
 readMoreContainers.map(
   (container) => new ReadMoreToggler(container, ".js-read-more-trigger")

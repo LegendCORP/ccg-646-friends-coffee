@@ -19,7 +19,7 @@ export class OpenClose {
       hideOnClickOutside: true,
     };
     this.options = extend(this.defaults, opts || {});
-    this.holders = document.querySelectorAll(holders);
+    this.holders = [...document.querySelectorAll(holders)];
 
     this.attachEvents();
   }

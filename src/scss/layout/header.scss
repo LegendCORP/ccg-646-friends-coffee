@@ -1,8 +1,8 @@
 .header {
   padding: 29px 0;
   margin: 0 0 10px;
-  
-  @include media('>=tablet') {
+
+  @include media(">=tablet") {
     margin: 0 0 37px;
     padding: 33px 0;
   }
@@ -11,12 +11,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
-  
+
   &__logo-link {
     width: 128px;
-    
-    @include media('>=tablet') {
+
+    @include media(">=tablet") {
       width: 241px;
     }
   }
