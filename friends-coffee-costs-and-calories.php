@@ -729,7 +729,7 @@
                         <a href="/" class="pre-footer__logo">
                             <img src="images/logo.svg" alt="CardsChat.com">
                         </a>
-                        <div class="pre-footer__copyrights"><span class="pre-footer__copyrights-date">Data collected in 2020.</span>&copy; $year Cardschat.com. All Rights Reserved</div>
+                        <div class="pre-footer__copyrights"><span class="pre-footer__copyrights-date">Data collected in 2020.</span>&copy; <?php echo date("Y"); ?> Cardschat.com. All Rights Reserved</div>
                     </div>
                     <div class="pre-footer__buttons">
                         <div class="dropdown open-close">
